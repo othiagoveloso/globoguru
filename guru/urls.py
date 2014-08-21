@@ -22,7 +22,7 @@ urlpatterns = patterns('',
 
      url(r'^ao-vivo/$', 'guru.core.views.aovivo', name='aovivo'),
 
-     url(r'^ao-vivo/(?P<id>\d+)$', 'guru.core.views.videovivo', name='videovivo'),
+     url(r'^ao-vivo/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
 
     # url(r'^blog/', include('blog.urls')),
 
