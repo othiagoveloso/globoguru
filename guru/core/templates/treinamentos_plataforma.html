@@ -1,0 +1,89 @@
+{% extends 'treinamentos.html' %}
+{% block content %}
+
+   <div class="container">
+<p> <br> </p>
+
+       
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Treinamentos
+                    <small>de plataforma</small>
+                </h1>
+                <div class="btn-group">
+  <button type="button" class="btn btn-info">Filtrar por</button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="{% url 'treinamentos' %}">Todos</a></li>
+    <li><a href="{% url 'treinamentos_plataforma' %}">Treinamento de plataformas</a></li>
+    <li><a href="{% url 'treinamentos_produto' %}">Treinamento de produtos</a></li>
+   
+  </ul>
+</div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+  <p></p>
+
+  
+        <div class="row">
+
+              {% for Training in object_list %}
+              {% if Training.status == "p" and Training.segment == "p" %}
+                 
+
+            <div class="col-md-3 portfolio-item">
+                <a href="/modulos">
+                    <img class="img-responsive" src="{{ STATIC_URL }}/img/play_guru.png">
+                {{ Training.name }}
+                
+                </a>
+            </div>
+            
+            {% endif %}
+            {% endfor %}
+
+            
+        </div>
+
+        <hr>
+
+        <div class="row text-center">
+
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a>
+                    </li>
+                    <li class="active"><a href="#">1</a>
+                    </li>
+                    <li><a href="#">2</a>
+                    </li>
+                    <li><a href="#">3</a>
+                    </li>
+                    <li><a href="#">4</a>
+                    </li>
+                    <li><a href="#">5</a>
+                    </li>
+                    <li><a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    
+    <!-- /.container -->
+
+    <!-- JavaScript -->
+    
+
+{% endblock content %}

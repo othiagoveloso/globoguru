@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+   <div class="container">
+<p> <br> </p>
+       
+        <div class="row">
+            <div class="col-lg-12">
+                
+
+                <div class="btn-group">
+  <button type="button" class="btn btn-info">Filtrar por</button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="{% url 'treinamentos' %}">Todos</a></li>
+    <li><a href="{% url 'treinamentos_plataforma' %}">Treinamento de plataformas</a></li>
+    <li><a href="{% url 'treinamentos_produto' %}">Treinamento de produtos</a></li>
+   
+  </ul>
+</div>
+
+            </div>
+
+        </div>
+        <!-- /.row -->
+  <p></p>
+
+  
+        {% block drop %}
+        {% endblock %}
+
+{% endblock content %}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> Treinamentos globo.com </title>
+
+	<!-- Boostrap core CSS -->
+	<link href="{{ STATIC_URL }}/css/bootstrap.css" rel="stylesheet">
+
+
+
+</head>
+
+<body> 
+
+	
+
+	
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="/">Treinamentos globo.com | </a>
+</div>
+ <div class="navbar-collapse collapse">
+<form class="navbar-form navbar-right" role="form">
+
+<button class="btn btn-success" type="submit" href="admin/"> Login » 
+
+
+
+</lo>
+</button>
+</form>
+</div>
+</div>
+</div>
+<div class="jumbotron">
+
+
+
+</div>
+<div class="container">
+	
+<div class="row">
+<div class="col-md-4">
+
+{% for modulo in object_list %}
+
+
+<h2>{{ modulo.title }}</h2> 
+<p>{{ modulo.description }}</p>
+<p>{{ modulo.icon }}</p>
+{% load embed_video_tags %}
+{% video item.video as my_video %}
+<iframe src= "{{ modulo.video }} width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{% endvideo %}
+
+
+
+
+{% endfor %}
+
+<p>
+<a class="btn btn-default" role="button" href="/etapas">Ver todas as etapas desse modulo »</a>
+</p>
+
+
+<footer>
+<p>© globo.com 2014</p>
+</footer>
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+<script src="{{ STATIC_URL }}js/bootstrap.min.js">
+
+
+
+
+</body>
+
+</html>
