@@ -8,6 +8,7 @@ django-decouple==2.1
 django-embed-video==0.10
 gdata==2.0.18
 gunicorn==18.0
+psycopg2==2.5.1
 importlib==1.0.3
 pystache==0.5.4
 requests==2.3.0
