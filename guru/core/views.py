@@ -86,7 +86,7 @@ def aovivo(request, template_name='ao-vivo.html'):
     return render(request, template_name,{'Training':training})
 
 
-def videovivo(request,slug, template_name='ao-vivo.html'):
+def videovivo(request,slug, template_name='ao-vivo-video.html'):
     movies = Training.objects.get(slug=slug)
     training = Training.objects.all()
     

@@ -17,8 +17,8 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 95px;
-  color:#333333;
+  font-size: 70px;
+  color:white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -187,7 +187,7 @@
   font-size: 2em;
 }
 .fa-inverse {
-  color: #ffffff;
+  color: #333333;
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */

@@ -340,7 +340,7 @@ h3, .h3 {
 }
 h4, .h4 {
     font-size: 22px;
-    color: #a8adb0;
+    color: #333333;
 }
 h5, .h5 {
     font-size: 15px;
@@ -1013,7 +1013,7 @@ pre code {
 }
 .col-md-4 {
     width: 33.3333%;
-    text-align: left;
+    text-align: center;
 }
 .col-md-3 {
     width: 25%;
@@ -3417,7 +3417,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 }
 .navbar-default {
-    background-image: linear-gradient(#0669DE,#0763d1);
+    background:none repeat scroll 0 0 #0069DE;
     border-color: rgba(1, 1, 1, 1);
 }
 .navbar-default .navbar-brand {

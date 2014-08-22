@@ -44,7 +44,7 @@
 
                 <ol class="breadcrumb">
                 
-                <li> <a href="{% url 'videovivo' Training.slug  %}" data-toggle="lightbox" > 
+                <li> <a href="{% url 'videovivo' Training.slug  %}" data-toggle="modal" data-target="#myModal" > 
 
 
                   
@@ -62,25 +62,29 @@
 
 
  
-<div class="section-right_step">           
-       
-            {% load embed_video_tags %}
-            {% video movie as my_video %}
-     <iframe 
-    src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=ff0179&amp;autoplay=1" 
-    width="650" height="400" frameborder="0" 
-    webkitAllowFullScreen mozallowfullscreen allowFullScreen >
-    
-  
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
 
-
-  </iframe> 
-
-
-{% endvideo %}
 
 
 <div class="description">

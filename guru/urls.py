@@ -7,6 +7,8 @@ urlpatterns = patterns('',
     # Examples:
      
      url(r'^$', 'guru.core.views.home', name='home'),
+
+     url(r'^$', 'guru.core.views.home_training', name='home_training'),
     
      url(r'^treinamentos/$', 'guru.core.views.treinamento', name='treinamentos'),
     
