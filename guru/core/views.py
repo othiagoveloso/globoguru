@@ -6,15 +6,12 @@ from guru.home.models import Spotlight
 
 def home(request, template_name='index.html'):
     destaque = Spotlight.objects.all() 
-    data = {}
-    data['object_list'] =  destaque
-    return render(request, template_name, data)
+    training = Training.objects.all()
+    return render(request, template_name, {'Spotlight':destaque,'training':training})
 
 def home_training(request, template_name='index.html'):
-    training = Training.objects.all() 
-    data = {}
-    data['object_list'] =  training
-    return render(request, template_name, data)
+    training = Training.objects.get(id) 
+    return render(request, template_name,{ 'training':training})
 
 
 def treinamento(request, template_name='treinamentos.html'):

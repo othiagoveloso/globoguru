@@ -5,7 +5,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 p.small {
@@ -28,8 +28,8 @@ h4,
 h5,
 h6 {
     text-transform: ;
-    font-family:'Nunito', sans-serif;
-    font-weight: 500;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 hr.star-light,
@@ -119,7 +119,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 10px 0;
+        padding: 8px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -179,7 +179,31 @@ section {
     border-top: 1px solid #DDDDDD;
     box-shadow: 0 1px 0 #FFFFFF inset, 0 -1px 0 #FFFFFF inset;
     padding-bottom:1%;
+    padding-top: 9%;
+    text-align: center;
+
 }
+
+.section2 {
+
+    background: none repeat scroll 0 0 #F7F7F7 ;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 -1px 0 #FFFFFF inset;
+    padding-bottom:1%;
+    padding-top: 2%;
+    text-align: center;
+    
+}
+
+.section2 h2{
+
+    text-align: left
+}
+
+
 
 section.training {
     padding: 70px 0;
@@ -198,6 +222,7 @@ section.training {
     
     float: left;
     width: 57%;
+    padding-right: 30%;
 
 }
 
@@ -240,7 +265,7 @@ section.training {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    font-size: 30px;
 }
 
 section.success {
@@ -256,6 +281,7 @@ section.success {
     font-size: 15px;
     padding-bottom: 3%;
     height: 1px;
+    padding-left: 1.2%;
     
 
 }
