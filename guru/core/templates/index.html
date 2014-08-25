@@ -176,7 +176,7 @@
                      
                     
                     {% for Training in training %}
-                        {% if Training.status == "p" %}
+                        {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
                    <a href="{% url 'modulos' Training.slug   %} "> 
                     <img class="img-responsive" src="{{ STATIC_URL }}/img/backstage.png">
                    {{ Training.name }}
