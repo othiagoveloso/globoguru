@@ -28,8 +28,11 @@ h4,
 h5,
 h6 {
     text-transform: ;
-    font-family:'Open Sans', sans-serif;
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif; 
+    font-style: normal; 
     font-weight: 300;
+    text-transform: uppercase;
+    text-rendering:optimizelegibility;
 }
 
 hr.star-light,
@@ -198,7 +201,7 @@ section {
     
 }
 
-.section2 h2{
+.section2 h3{
 
     text-align: left
 }
@@ -282,11 +285,15 @@ section.success {
     padding-bottom: 3%;
     height: 1px;
     padding-left: 1.2%;
-    
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 
 }
 
 
+    
+    
 
 
 @media(max-width:767px) {
@@ -573,3 +580,15 @@ width: 500px;
     transform: rotate(90deg);
 }
 
+
+
+body {
+    counter-reset: subsection;
+}
+
+
+
+h2:before {
+    counter-increment: subsection;
+    content:  counter(subsection) " - ";
+}

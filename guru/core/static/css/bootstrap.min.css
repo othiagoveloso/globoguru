@@ -207,9 +207,12 @@ html {
 body {
     background-color: #FFFFFF;
     color: #2C3E50;
-    font-family:'Open Sans', sans-serif;
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif; 
+    font-style: normal; 
+    font-weight: 300;
     font-size: 18px;
-    line-height: 1.42857;
+    text-transform:;
+    
 }
 input, button, select, textarea {
     font-family: inherit;
@@ -279,9 +282,9 @@ hr {
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: inherit;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    line-height: 1.1;
+    font-family: proxima-nova, sans-serif; 
+    font-style: normal; 
+    font-weight: 900;
 }
 
 h1.border:after { 
@@ -1747,8 +1750,6 @@ textarea.input-lg, select.input-lg[multiple] {
     border-radius: 4px 4px 4px 4px;
     cursor: pointer;
     display: inline-block;
-    font-size: 19px;
-    font-weight: normal;
     line-height: 1.42857;
     margin-bottom: 0;
     padding: 10px 15px;
@@ -1757,6 +1758,10 @@ textarea.input-lg, select.input-lg[multiple] {
     white-space: nowrap;
     background: none repeat scroll 0 0 #0069DE;
     color: white;
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: thin dotted;

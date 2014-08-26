@@ -18,14 +18,19 @@
         <div class="row">
         
             <div class="col-lg-12">
-                <h4 class="page-header">
-             <small> <a href="{% url 'treinamentos' %}">  treinamentos</a> 
-              </small>     <small> <a href="#"> / voltar ao modulo</a></small>
-                </h4>
+                <h5 class="page-header">
+             <ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">{{step.name}}</li>
+</ol>
+
+                </h5>
                 
             </div>
 
         </div>
+
         <!-- /.row -->
  <h1>  {{ title.modulos.name }} </h1>
  <h4> {{ title.modulos.description }} </h4>
@@ -46,7 +51,7 @@
 
 
                   
-                  {{ steps.name }}  </li> 
+                <h2>  {{ steps.name }} </h2> </li> 
                 </a>
               
               </ol>
