@@ -18,10 +18,35 @@
   font-weight: normal;
   line-height: 1;
   font-size: 50px;
-  color:white;
+  color:#3190f1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.fa2 {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 50px;
+  color:#509743;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa3 {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 50px;
+  color:#ca4040;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.3333333333333333em;
@@ -187,7 +212,7 @@
   font-size: 2em;
 }
 .fa-inverse {
-  color: #333333;
+  color: white;
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */

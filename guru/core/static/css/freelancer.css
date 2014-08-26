@@ -21,10 +21,7 @@ a.active {
     color: #0669DE;
 }
 
-h1,
-h2,
 h3,
-h4,
 h5,
 h6 {
     text-transform: ;
@@ -122,7 +119,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 8px 0;
+        padding: 20px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -206,7 +203,18 @@ section {
     text-align: left
 }
 
+h3.border:after {
+    background-color: #333333;
+    content: "";
+    display: block;
+    height: 7px;
+    margin-top: 8px;
+    width: 82px;
+}
 
+h3.border {
+    border-bottom: 1px solid #EDEDED;
+}
 
 section.training {
     padding: 70px 0;
@@ -236,11 +244,15 @@ section.training {
 
 }
 
+
+
 .section-left_step {
     float: left;
     width: 40%;
 
 }
+
+
 
 .section-right_step {
     float: right;
