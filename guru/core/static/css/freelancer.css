@@ -212,6 +212,34 @@ h3.border:after {
     width: 82px;
 }
 
+h3.border2:after {
+    background-color: #3190f1;
+    content: "";
+    display: block;
+    height: 7px;
+    margin-top: 8px;
+    width: 82px;
+    color: #3190f1;
+}
+
+h3.border3:after {
+    background-color: #509743;
+    content: "";
+    display: block;
+    height: 7px;
+    margin-top: 8px;
+    width: 82px;
+}
+
+h3.border4:after {
+    background-color: #ca4040;
+    content: "";
+    display: block;
+    height: 7px;
+    margin-top: 8px;
+    width: 82px;
+}
+
 h3.border {
     border-bottom: 1px solid #EDEDED;
 }
