@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-color:  #E2E2E2;
+    background-color:  none;
 
 }
 
@@ -482,7 +482,7 @@ footer .footer-col {
 footer .footer-below {
     padding: 25px 0;
     background-color:#333333;
-    font-family: arial,helvetica,freesans,sans-serif;
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
     font-size: 15px;
 }
 

@@ -262,7 +262,7 @@ img {
 hr {
     
    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRFzMzM////040VdgAAABRJREFUeNpiYGBEh2iAYTirAAgwAFiHALGfZGeqAAAAAElFTkSuQmCC") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
-   height: 15px;
+   height: 12px;
 }
 
 
@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: inherit;
     font-family: proxima-nova, sans-serif; 
     font-style: normal; 
-    font-weight: 300;
+    font-weight: 500;
 }
 
 h1.border:after { 
@@ -370,7 +370,7 @@ cite {
     text-align: right;
 }
 .text-center {
-    text-align: left;
+    text-align: center;
 }
 .text-justify {
     text-align: justify;
