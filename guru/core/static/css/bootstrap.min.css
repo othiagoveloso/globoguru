@@ -284,7 +284,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: inherit;
     font-family: proxima-nova, sans-serif; 
     font-style: normal; 
-    font-weight: 900;
+    font-weight: 300;
 }
 
 h1.border:after { 
@@ -324,7 +324,7 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small, .h4 .s
     font-size: 75%;
 }
 h1, .h1 {
-    font-size: 30px;
+    font-size: 27px;
     color: #0669DE;
 }
 h2, .h2 {
