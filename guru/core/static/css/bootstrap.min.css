@@ -1318,18 +1318,25 @@ font-size: 25px;
 padding:5px;  
 color: #333333;
 font-family: 'Exo', sans-serif;
-
+border-left: 5px solid #0069DE;
 
 }
+
+
+
 
 
 #menu li {
 
 list-style:none;
 
+
 }
 
+#menu h2 {
+font-family: 'Exo',sans-serif;
 
+}
 
 table {
     background-color: rgba(0, 0, 0, 0);
@@ -3569,11 +3576,12 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     color: #2C3E50;
 }
 .breadcrumb {
-    background-color: #ECF0F1;
+    background-color: none;
     border-radius: 4px 4px 4px 4px;
     list-style: none outside none;
     margin-bottom: 21px;
     padding: 8px 15px;
+    padding-top: 2%;
 }
 .breadcrumb > li {
     display: inline-block;
