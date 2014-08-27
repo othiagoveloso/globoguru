@@ -29,14 +29,19 @@
         </div>
 
 <h1 align="center">{{ object.name }} </h3>
-<hr>
+
+
+
+
+ 
+
 
 <div align="center">           
        
             {% load embed_video_tags %}
             {% video movie as my_video %}
      <iframe 
-    src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=ff0179&amp;autoplay=1" 
+    src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=0069DE&amp;autoplay=1" 
     width="750" height="400" frameborder="0" 
     webkitAllowFullScreen mozallowfullscreen allowFullScreen >
     
@@ -47,10 +52,36 @@
 {% endvideo %}
 
   </iframe> 
+
+
 <h4> {{ object.description }} </h4>
   <div> 
 
     </div>
+
+<button class="btn" data-toggle="modal" data-target="#myModal">
+  Ainda com dúvidas?
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dúvidas? </h4>
+      </div>
+      <div class="modal-body">
+        Ainda ficou alguma dúvida sobre o treinamento <strong> {{ object.name }} ?</strong>Não exite em nos perguntar,mande um email para <strong> atendimento.plataformas@corp.globo.com </strong>, Coloque sua dúvida que nós vamos te ajudar.
+      </div>
+      <div class="modal-footer">
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+<h1></h1>
 
 </div> 
  
