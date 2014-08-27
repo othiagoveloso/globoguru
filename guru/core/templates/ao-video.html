@@ -1,0 +1,64 @@
+{% extends 'base_on.html' %}
+{% block content %}
+
+<div class="container">
+        <div class="btn-group">
+  <button type="button" class="btn btn-info"></button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#"></a></li>
+    <li><a href="plataforma"></a></li>
+    <li><a href="#"></a></li>
+
+  </ul>
+</div>
+
+        <div class="row">
+        
+            <div class="col-lg-12">
+                <h4 class="page-header">
+             <small> <a href="#"</a> 
+              </small>     <small> <a href="#"></a></small>
+                </h4>
+                
+            </div>
+
+        </div>
+
+<h1 align="center">{{ object.name }} </h3>
+<hr>
+
+<div align="center">           
+       
+            {% load embed_video_tags %}
+            {% video movie as my_video %}
+     <iframe 
+    src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=ff0179&amp;autoplay=1" 
+    width="750" height="400" frameborder="0" 
+    webkitAllowFullScreen mozallowfullscreen allowFullScreen >
+    
+  
+
+
+
+{% endvideo %}
+
+  </iframe> 
+<h4> {{ object.description }} </h4>
+  <div> 
+
+    </div>
+
+</div> 
+ 
+
+</div> 
+
+
+
+
+
+{% endblock content %}
