@@ -222,6 +222,9 @@ h3.border2:after {
     color: #3190f1;
 }
 
+
+
+
 h3.border3:after {
     background-color: #509743;
     content: "";
@@ -244,6 +247,18 @@ h3.border {
     border-bottom: 1px solid #EDEDED;
 }
 
+h3.border2 {
+    border-bottom: 1px solid #EDEDED;
+}
+
+h3.border3 {
+    border-bottom: 1px solid #EDEDED;
+}
+
+h3.border4 {
+    border-bottom: 1px solid #EDEDED;
+}
+
 section.training {
     padding: 70px 0;
     background-image: linear-gradient(#dcd7d9, #f9f7f8) ;
@@ -260,7 +275,16 @@ section.training {
 .section-left {
     
     float: left;
-    width: 57%;
+    width: 20%;
+    padding-right: 30%;
+
+}
+
+
+.section-left2 {
+    
+    float: left;
+    width: 50%;
     padding-right: 30%;
 
 }
@@ -632,3 +656,17 @@ h2:before {
     counter-increment: subsection;
     content:  counter(subsection) " - ";
 }
+
+#step {
+
+padding-bottom: 3%;
+
+}
+
+
+#step h4 {
+
+width: 350px;
+
+}
+

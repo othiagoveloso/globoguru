@@ -1318,7 +1318,7 @@ font-size: 25px;
 padding:5px;  
 color: #333333;
 font-family: 'Exo', sans-serif;
-border-left: 5px solid #0069DE;
+
 
 }
 
@@ -1334,10 +1334,14 @@ list-style:none;
 }
 
 #menu h2 {
-font-family: 'Exo',sans-serif;
-font-style: italic;
-
+font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
+font-style: none;
+color:#555247;
+font-size: 30px;
 }
+
+#menu h2:hover {
+color: #0069DE}
 
 table {
     background-color: rgba(0, 0, 0, 0);
