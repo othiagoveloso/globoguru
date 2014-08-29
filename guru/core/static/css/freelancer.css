@@ -672,7 +672,7 @@ width: 350px;
 
 #video {
 
-background-image: black;
+    background-color: black;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
