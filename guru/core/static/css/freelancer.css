@@ -286,6 +286,7 @@ section.training {
     float: left;
     width: 50%;
     padding-right: 30%;
+    text-align: left;
 
 }
 
@@ -317,7 +318,7 @@ section.training {
 .section-right_step {
     float: right;
     width: 1%;
-    padding-right: 50%;
+    padding-right: 55%;
 
 }
 

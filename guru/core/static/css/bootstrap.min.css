@@ -237,11 +237,25 @@ figure {
 img {
     vertical-align: middle;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     display: block;
     height: auto;
     max-width: 40%;
 }
+ 
+ }
+
+
+
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img,x:-moz-any-link, x:default {
+    display: block;
+    height: auto;
+    max-width: 90%;
+}
+
+
 .img-rounded {
     border-radius: 6px 6px 6px 6px;
 }
