@@ -1339,6 +1339,7 @@ font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
 font-style: none;
 color:#555247;
 font-size: 30px;
+text-transform: uppercase;
 }
 
 #menu h2:hover {
