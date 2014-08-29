@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-    <div class="container">
+    <div class="">
         <div class="btn-group">
   <button type="button" class="btn btn-info"></button>
   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
@@ -16,7 +16,7 @@
 </div>
 
         <div class="row">
-        
+        <div class= "container"> 
             <div class="col-lg-12">
                 <h5 class="page-header">
              <ol class="breadcrumb">
@@ -27,19 +27,22 @@
                 </h5>
                 
             </div>
-
+          </div>
         </div>
 
         <!-- /.row -->
+ 
  <div id="step">
+  <div class="container"> 
  <h3 class="border4">  {{ title.modulos.name }} </h1>
  <h4> {{ title.modulos.description }} </h4>
-
+</div> 
 </div> 
 
       
 
-<div>
+<div id= "video">
+<div class="container">
 <div class="section-left_step">
 <div id="menu"> 
   {% for steps in steps %} 
@@ -50,14 +53,15 @@
                 <li> <a href="{% url 'video' steps.id  %}" data-toggle="lightbox" > 
 
 
-                  
+                
                 <h2>  {{ steps.name  }} » </h2> </li> 
                 </a>
               
               </ol>
   
-
+      
   {% endfor %}   
+
             </div> 
 </div> 
 
@@ -88,12 +92,18 @@
 
 
 </div> 
+</div> 
+</div> 
 
 
 </div>
 
 </div> 
 
+<div>
+  <div class="container"> 
+    <h4> {{ steps.description }} </h4>
+    <hr> 
 
 <button class="btn" data-toggle="modal" data-target="#myModal">
   Ainda com dúvidas?
@@ -115,7 +125,8 @@
       </div>
     </div>
   </div>
-
+ </div>
+</div> 
 
 
     

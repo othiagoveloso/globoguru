@@ -1,7 +1,7 @@
 {% extends 'base_on.html' %}
 {% block content %}
 
-<div class="container">
+<div class="">
         <div class="btn-group">
   <button type="button" class="btn btn-info"></button>
   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
@@ -28,15 +28,20 @@
 
         </div>
 
-<h3 class="border" align="center">{{ object.name }} </h3>
+<div>
+  <div class ="container">
+<h3 class="border" align="">{{ object.name }} </h3>
 
 
 
+</div>
+</div>
 
  
 
 
-<div align="center">           
+<div id="video" align="center">    
+<div class="container" >      
        
             {% load embed_video_tags %}
             {% video movie as my_video %}
@@ -54,11 +59,16 @@
   </iframe> 
 
 
-<h4> {{ object.description }} </h4>
-  <div> 
+
+  </div> 
 
     </div>
+<div>
+  <div class="container"> 
+    <h4> {{ object.description }} </h4>
+    <hr>
 
+  
 <button class="btn" data-toggle="modal" data-target="#myModal">
   Ainda com dúvidas?
 </button>

@@ -316,8 +316,8 @@ section.training {
 
 .section-right_step {
     float: right;
-    width: 43%;
-    padding-right: 60%;
+    width: 1%;
+    padding-right: 50%;
 
 }
 
@@ -337,7 +337,7 @@ section h2 {
 
 section.success {
     color: #000000;
-    background-image: linear-gradient(#F1F1F1, #E8E4E6);
+    background:url("../images/fundo.gif") repeat scroll 0 0 #FFFFFF;
     padding-top: 1%;
     padding-left: 0%;
     padding-bottom: 0%;
@@ -667,6 +667,18 @@ padding-bottom: 3%;
 #step h4 {
 
 width: 350px;
+
+}
+
+#video {
+
+background-image: black;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
