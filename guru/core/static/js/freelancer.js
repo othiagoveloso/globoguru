@@ -32,7 +32,7 @@ $('body').scrollspy({
 
 $(document).ready(function() {
     // Configure/customize these variables.
-    var showChar = 80;  // How many characters are shown by default
+    var showChar = 69;  // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = " ";
     var lesstext = "";
