@@ -30,7 +30,4 @@ $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
 
-$('read').readmore({
-  speed: 75,
-  maxHeight: 3
-});
+
