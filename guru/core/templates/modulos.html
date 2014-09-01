@@ -33,7 +33,7 @@
         <div class="row">
              {% for modulo in modulos %} 
                  <div class="col-md-3 portfolio-item">
-                <a href="{% url 'etapas'  modulo.slug %}"> 
+                
                    
                     {% load embed_video_tags %}
                     {% video modulo.video as my_video %}
@@ -42,7 +42,8 @@
                     {% endvideo %}
                   
               <h2>  {{ modulo.name }}  </h2>  
-                
+              <h4> {{ modulo.description }}  </h4>
+               <a href="{% url 'etapas'  modulo.slug %}"> saiba mais </a> 
                
 
             </div>
