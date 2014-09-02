@@ -113,7 +113,7 @@
     {% endif %}
 
 <button class="btn" data-toggle="modal" data-target="#myModal">
-  Ainda com dúvidas?
+  Dúvidas?
 </button>
  
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -121,10 +121,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
-        <h4 class="modal-title" id="myModalLabel">Dúvidas? </h4>
+        <h4 class="modal-title" id="myModalLabel"> {{ title.modulos.name }} </h4>
       </div>
       <div class="modal-body">
-        Ainda ficou alguma dúvida sobre o treinamento <strong> {{ title.modulos.name }}?</strong>Não exite em nos perguntar,mande um email para <strong> atendimento.plataformas@corp.globo.com </strong>, Coloque sua dúvida que nós vamos te ajudar.
+        Ficou alguma dúvida ? Entre em contato pelo <strong> atendimento.plataformas@corp.globo.com </strong>
       </div>
       <div class="modal-footer">
         

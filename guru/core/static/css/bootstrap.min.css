@@ -392,6 +392,7 @@ cite {
 .text-muted {
     color: #B4BCC2;
     padding-bottom: 5%;
+    width: 370px;
 }
 .text-primary {
     color: #2C3E50;
