@@ -31,6 +31,7 @@
  <h4> {{ title.trainings.description }} </h4>
        
         <div class="row">
+          <div class="container">
              {% for modulo in modulos %} 
                  <div class="col-md-3 portfolio-item">
                 
@@ -40,19 +41,20 @@
                     {{ my_video.thumbnail }}
                      
                     {% endvideo %}
-                  
+               <a href="{% url 'etapas'  modulo.slug %}">     
               <h2>  {{ modulo.name }}  </h2>  
+            </a>
              <div class="more">
               <h4>  {{ modulo.description }}  </h4>
             </div> 
-               <a href="{% url 'etapas'  modulo.slug %}"> » Ir para treinamento  </a> 
+             
                
 
             </div>
           {% endfor %}     
            
             
-
+</div>
             
         </div>
 

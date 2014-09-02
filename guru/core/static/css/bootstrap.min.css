@@ -295,7 +295,7 @@ hr {
     width: 1px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: inherit;
+    color: black;
     font-family: proxima-nova, sans-serif; 
     font-style: normal; 
     font-weight: 500;
@@ -345,10 +345,10 @@ h2, .h2 {
     font-size: 25px;
 }
 h3, .h3 {
-    font-size: 26px;
+    font-size: 22px;
 }
 h4, .h4 {
-    font-size: 19px;
+    font-size: 17px;
     color: #333333;
 }
 h5, .h5 {
@@ -1042,7 +1042,7 @@ pre code {
 .col-md-3 h4 {
     overflow: ellipsis;
     white-space: wrap;
-    color: #509743;
+    color: #97959e;
 }
 
 
@@ -1364,9 +1364,9 @@ list-style:none;
 #menu h2 {
 font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
 font-style: none;
-color:#edeef2;
-font-size: 21px;
-text-transform: uppercase;
+color:black;
+font-size: 17px;
+
 }
 
 #menu h2:hover {

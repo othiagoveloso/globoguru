@@ -34,12 +34,12 @@
  
  <div id="step">
   <div class="container"> 
- <h3 class="border4">  {{ title.modulos.name }} </h1>
+ <h3 class="border4">  {{ title.modulos.name }}  </h1>
  <h4> {{ title.modulos.description }} </h4>
 </div> 
 </div> 
 
-      
+   
 
 <div id= "video">
 <div class="container">
@@ -104,9 +104,13 @@
 <div>
   
   <div class="container"> 
+    
+    {% if step.description == "" %}
+    
+    {% else %}
     <h3 class="border"> Informações adicionais </h3> 
     <h4> {{ step.description }} </h4>
-    <hr> 
+    {% endif %}
 
 <button class="btn" data-toggle="modal" data-target="#myModal">
   Ainda com dúvidas?

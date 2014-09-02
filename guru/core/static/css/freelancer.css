@@ -655,7 +655,12 @@ body {
 
 h2:before {
     counter-increment: subsection;
-    content:  counter(subsection) " - ";
+    content:  counter(subsection) " " ;
+    color: #0069DE;
+    font-size: 15px;
+    
+    
+    
 }
 
 #step {
@@ -673,7 +678,7 @@ width: ;
 
 #video {
 
-    background-color: black;
+    background-color: #DDDDDD;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
