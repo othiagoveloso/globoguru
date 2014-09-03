@@ -656,9 +656,18 @@ body {
 h2:before {
     counter-increment: subsection;
     content:  counter(subsection) " " ;
-    color: #0069DE;
+    color: white;
     font-size: 15px;
-    
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2em;
+    background-color: #333333;
+    border-radius: 50px 50px 50px 50px; 
+    text-align: center;
+
     
     
 }
@@ -694,4 +703,6 @@ width: ;
 .morelink {
     display: block;
 }
+
+
 
