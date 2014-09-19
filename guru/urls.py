@@ -1,10 +1,15 @@
 from django.conf.urls import patterns, include, url
+from django.conf.urls import handler404
 
 from django.contrib import admin
+#from my.forms import AuthenticationForm
 admin.autodiscover()
+#admin.site.login_form = AuthenticationForm
 
 urlpatterns = patterns('',
     # Examples:
+
+
      
      url(r'^$', 'guru.core.views.home', name='home'),
 
@@ -26,6 +31,17 @@ urlpatterns = patterns('',
 
      url(r'^play/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
 
+     url(r'^login/$', 'guru.core.views.login', name='login'),
+
+     url(r'^logout/$', 'guru.core.views.login'), # pagina de login
+
+     url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html', 'extra_context': {'next':'/'}}),
+     
+     url(r'^logout/$', 'django.contrib.auth.views.logout'),  
+
+     
+
+
     # url(r'^blog/', include('blog.urls')),
 
     
@@ -34,3 +50,5 @@ urlpatterns = patterns('',
 
 
 )
+
+

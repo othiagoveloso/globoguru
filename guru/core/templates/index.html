@@ -53,7 +53,13 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                
+
+                    <li> <a href="#"> Bem vindo, {{ user }} </a> </li>
+                 {% if user.is_anonymous %}
+      <li> <a href="{% url 'django.contrib.auth.views.login' %}">login</a> </li> 
+      {% else %}
+     <li>  <a href="{% url 'django.contrib.auth.views.logout' %}">Sair</a> </li> 
+      {% endif %}
                     <li class="page-scroll">
                         
                     </li>
@@ -64,7 +70,6 @@
         <!-- /.container-fluid -->
     </nav>
      
- 
  
 
 
@@ -227,7 +232,7 @@
 
     
 
-    <!-- Portfolio Modals -->
+    
     
     <script src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>

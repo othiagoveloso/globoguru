@@ -1847,8 +1847,8 @@ textarea.input-lg, select.input-lg[multiple] {
     color: #95A5A6;
 }
 .btn-primary {
-    background-color: #2C3E50;
-    border-color: #2C3E50;
+    background:none repeat scroll 0 0 #0069DE;
+    border-color: #0069DE;
     color: #FFFFFF;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {

@@ -50,6 +50,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'guru.core',
     'guru.home',
+    'guru.subscriptions', 
     'embed_video', 
 
 )
@@ -68,6 +69,20 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'guru.urls'
 
+'''
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request', 
+    'django.core.context_processors.auth', 
+    'django.core.context_processors.debud', 
+    'django.core.context_processors.i18n', 
+
+
+
+    )
+'''
+
+
 WSGI_APPLICATION = 'guru.wsgi.application'
 
 
@@ -83,6 +98,19 @@ DATABASES = {
         
     
 }
+
+
+# ESQUEMA DE LOGIN
+AUTH_PROFILE_MODULE = 'admin'
+
+LOGIN_URL = 'django.contrib.auth.views.login'
+
+LOGIN_REDIRECT_URL  =  '/'
+
+
+# ESQUEMA DE LOGIN
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

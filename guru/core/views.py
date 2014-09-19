@@ -1,19 +1,41 @@
+#coding:utf-8 
 from django.shortcuts import render
 from guru.core.models import  Modulo, Training, Step
+#from guru.subscriptions.models import Subscription 
+from django.contrib.auth.models import User
 from guru.home.models import Spotlight
+from django.http import HttpResponseRedirect
+from django.contrib.auth.forms import AuthenticationForm
+#from django.shortcuts import render_to_response
+#from django.contrib.auth import authenticate, logout, login as authlogin
+#from django.template import RequestContext
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
 
+class LoggedInMixin(object):
+
+    @method_decorator(login_required)
+    def dispatch(self, *args, **kwargs):
+        return super(LoggedInMixin, self).dispatch(*args, **kwargs)
+
+
+
+
+@login_required
 def home(request, template_name='index.html'):
     destaque = Spotlight.objects.all() 
     training = Training.objects.all()
     return render(request, template_name, {'Spotlight':destaque,'training':training})
+
 
 def home_training(request, template_name='index.html'):
     training = Training.objects.get(id) 
     return render(request, template_name,{ 'training':training})
 
 
+@login_required
 def treinamento(request, template_name='treinamentos.html'):
     training = Training.objects.all()
     data = {}
@@ -32,12 +54,13 @@ def treinamentos_produto(request, template_name='treinamentos_produto.html'):
     data['object_list'] = training
     return render(request, template_name, data)      
 
+@login_required
 def modulo(request,slug):
      modulos = Modulo.objects.get(Modulo, slug=slug)
      context = { 'modulos': modulos }
      return render(request, 'modulos.html', context)
 
-
+@login_required
 def modulos(request,slug,template_name='modulos.html'):
     
     list_training = Training.objects.get(slug=slug)
@@ -54,7 +77,7 @@ def training_name(request,slug,template_name='modulos.html'):
     return render(request, template_name, data )    
 
 
-
+@login_required
 def etapas(request,slug,template_name='etapas.html'):
     
     list_modulo = Modulo.objects.get(slug=slug)
@@ -65,7 +88,7 @@ def etapas(request,slug,template_name='etapas.html'):
 
 
 
-
+@login_required
 def video(request,id, template_name='etapas.html'):
 
     step = Step.objects.get(id=id)
@@ -89,6 +112,24 @@ def videovivo(request,slug, template_name='ao-video.html'):
     
     
     return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})
+
+
+def login(request, template_name="login.html"):
+
+    if request.method == 'POST':
+        form = AuthenticationForm(data=request.POST) # Veja a documentacao desta funcao
+        
+        if form.is_valid():
+            #se o formulario for valido significa que o Django conseguiu encontrar o usuario no banco de dados
+            #agora, basta logar o usuario e ser feliz.
+            User(request, form.get_user())
+            return HttpResponseRedirect("/") # redireciona o usuario logado para a pagina inicial
+        else:
+            return render(request, "login.html", {"form": form})
+    
+    #se nenhuma informacao for passada, exibe a pagina de login com o formulario
+    return render(request, template_name, {"form": AuthenticationForm()})
+
 
 
 

@@ -46,6 +46,7 @@ class Training(Usual):
     def __unicode__(self):
         return (self.name)
 
+
 #Classe de modulos ( herdeira de classe abstrata,com chave estrangeira de treinamento )
 class Modulo(Usual):
 	  trainings = models.ForeignKey('Training',verbose_name=_('Treinamento'))

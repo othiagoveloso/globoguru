@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Guru Treinamentos</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/freelancer.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}css/stylish-portfolio.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="{{ STATIC_URL }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54075243-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+
+<body background="{{ STATIC_URL }}/img/biblioteca.jpg" fixed >
+
+ 
+ 
+  
+
+
+	<div class="login" align="center"> 
+
+<form class="form-signin" role="form" action="{% url 'django.contrib.auth.views.login' %}" method="post">
+{% csrf_token %}
+<img src="{{ STATIC_URL }}/img/login.png"/>  
+<h6> Seu portal de treinamentos da globo.com </h6>
+
+<input class="form-control" required="" placeholder="Digite seu login", id={{ form.username }}
+<input class="form-control" type="password" required="" placeholder="Digite sua senha" id={{ form.password }} 
+<label class="checkbox">
+
+<a href="#" data-toggle="modal" data-target="#myModal"> Não tem acesso?</a>
+</label>
+<button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+
+
+</form>
+
+{% if form.errors %}
+        <h4>*Seu login ou sua senha estão incorretos, tente novamente.</h4>
+    {% endif %}
+
+
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+        <h4 class="modal-title" id="myModalLabel" align="center"> Ambiente exclusivo para colaboradores </h4>
+      </div>
+      <div class="modal-body">
+        Se ainda não tem acesso, solicite ao seu gestor um login junto a equipe de <strong> atendimento de platafomas</strong>
+      </div>
+      <div class="modal-footer">
+        
+       
+      </div>
+    </div>
+
+
+
+ <script src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="{{ STATIC_URL }}js/classie.js"></script>
+    <script src="{{ STATIC_URL }}js/cbpAnimatedHeader.js"></script>
+    <script src="{{ STATIC_URL }}js/freelancer.js"></script>
+
+
+</body> 
+</html> 
