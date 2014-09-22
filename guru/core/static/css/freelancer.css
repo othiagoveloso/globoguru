@@ -657,21 +657,25 @@ h2:before {
     counter-increment: subsection;
     content:  counter(subsection) " " ;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
     height: 2em;
     line-height: 2em;
     position: relative;
     vertical-align: middle;
     width: 2em;
-    background: none repeat scroll 0 0 #333333;
+    background: none repeat scroll 0 0 #a5a5a5;
     border-radius: 50px 50px 50px 50px; 
     text-align: center;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 
     
     
 }
+
+
+
+
 
 
 #step {
@@ -689,14 +693,14 @@ width: ;
 
 #video {
 
-    background-color: #DDDDDD;
+    background-color: #e7e7e7;
     margin-bottom: 30px;
     position: relative;
     width: 100%;
     z-index: 0;
     margin-right: auto;
     margin-left: auto;
-    position: ;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 
 }
 

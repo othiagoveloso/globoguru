@@ -3,10 +3,17 @@
 html {
     font-family: 'Nunito',sans-serif;
     background-color:; 
+
 }
 body {
     margin: 0;
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 
 }
@@ -1365,13 +1372,15 @@ list-style:none;
 #menu h2 {
 font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
 font-style: none;
-color:black;
+color:#a5a5a5;
 font-size: 17px;
 
 }
 
 #menu h2:hover {
-color: #0069DE}
+color: #0069DE;
+
+}
 
 table {
     background-color: rgba(0, 0, 0, 0);

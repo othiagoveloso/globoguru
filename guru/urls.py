@@ -31,13 +31,9 @@ urlpatterns = patterns('',
 
      url(r'^play/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
 
-     url(r'^login/$', 'guru.core.views.login', name='login'),
-
-     url(r'^logout/$', 'guru.core.views.login'), # pagina de login
-
-     url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html', 'extra_context': {'next':'/'}}),
+     url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html'}),
      
-     url(r'^logout/$', 'django.contrib.auth.views.logout'),  
+     url(r'^logout/$', 'django.contrib.auth.views.logout',{'template_name': 'logout.html'}),  
 
      
 

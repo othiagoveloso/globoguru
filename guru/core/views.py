@@ -10,15 +10,7 @@ from django.contrib.auth.forms import AuthenticationForm
 #from django.contrib.auth import authenticate, logout, login as authlogin
 #from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
-from django.utils.decorators import method_decorator
 
-
-
-class LoggedInMixin(object):
-
-    @method_decorator(login_required)
-    def dispatch(self, *args, **kwargs):
-        return super(LoggedInMixin, self).dispatch(*args, **kwargs)
 
 
 
@@ -129,6 +121,12 @@ def login(request, template_name="login.html"):
     
     #se nenhuma informacao for passada, exibe a pagina de login com o formulario
     return render(request, template_name, {"form": AuthenticationForm()})
+
+
+def logout(request, template_name="logout.html"):
+
+    
+    return render(request, template_name,)
 
 
 
