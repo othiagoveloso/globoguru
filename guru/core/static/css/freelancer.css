@@ -657,16 +657,17 @@ h2:before {
     counter-increment: subsection;
     content:  counter(subsection) " " ;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     display: inline-block;
     height: 2em;
     line-height: 2em;
     position: relative;
     vertical-align: middle;
     width: 2em;
-    background-color: #333333;
+    background: none repeat scroll 0 0 #333333;
     border-radius: 50px 50px 50px 50px; 
     text-align: center;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
 
     
     
@@ -695,7 +696,7 @@ width: ;
     z-index: 0;
     margin-right: auto;
     margin-left: auto;
-    position: absolute;
+    position: ;
 
 }
 
