@@ -723,7 +723,7 @@ margin-right: auto;
 padding-left: 10px;
 padding-right: 10px;
 margin-top: 100px;
-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 opacity: 0.99;
 z-index: 999999999;
 overflow: hidden;
