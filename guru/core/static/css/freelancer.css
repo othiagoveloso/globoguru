@@ -657,7 +657,7 @@ h2:before {
     counter-increment: subsection;
     content:  counter(subsection) " " ;
     color: white;
-    font-size: 18px;
+    font-size: 40px;
     display: inline-block;
     height: 2em;
     line-height: 2em;
@@ -665,9 +665,9 @@ h2:before {
     vertical-align: middle;
     width: 2em;
     background: none repeat scroll 0 0 #a5a5a5;
-    border-radius: 50px 50px 50px 50px; 
+    /*border-radius: 50px 50px 50px 50px;*/ 
     text-align: center;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);*/
 
     
     
@@ -719,12 +719,13 @@ width: 35%;
 border-radius: 10px 10px 10px 10px ;
 padding: 5%;
 margin-left: auto;
-margin-right: auto;
+margin-right: 3%;
 padding-left: 10px;
 padding-right: 10px;
 margin-top: 100px;
 box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
 opacity: 0.99;
+
 z-index: 999999999;
 overflow: hidden;
 
@@ -745,5 +746,12 @@ color:black;
     color:red;
 }
 
+.intro {
+
+width: 30px;
+padding-bottom: 40px;
+height: 120px;
+padding-left: 5%;
+}
 
 

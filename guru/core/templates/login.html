@@ -35,19 +35,24 @@
 </head>
 
 
-<body background="{{ STATIC_URL }}/img/biblioteca.jpg" fixed >
+<body>
 
  
  
-  
+   
 
 
-	<div class="login" align="center"> 
+<h3>  </h3>
+
+    </div> 
+
+<div class="session-right">
+	<div class="login" align=""> 
 
 <form class="form-signin" role="form" action="{% url 'django.contrib.auth.views.login' %}" method="post">
 {% csrf_token %}
 <img src="{{ STATIC_URL }}/img/login.png"/>  
-<h6> Seu portal de treinamentos da globo.com </h6>
+<h6>  </h6>
 
 <input class="form-control" required="" placeholder="Digite seu login", id={{ form.username }} 
 <input class="form-control" type="password" required="" placeholder="Digite sua senha" id={{ form.password }} 
@@ -65,6 +70,8 @@
     {% endif %}
 
 
+</div>
+</div> 
 </div>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
