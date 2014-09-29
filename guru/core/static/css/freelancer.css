@@ -824,7 +824,7 @@ body {
   background: rgb(248,248,248);
   padding: 6px 10px;
   border-radius: 5px;
-  
+  font-size: 15px;
   font-weight: 400;
   text-align: left;
 }
@@ -952,7 +952,7 @@ body {
 .flag {
     background: rgb(255,255,255);
     z-index: 15;
-    
+
 }
 
 .direction-l .flag:before,
