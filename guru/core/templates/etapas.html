@@ -34,7 +34,7 @@
  
  <div id="step">
   <div class="container"> 
- <h3 class="border4">  {{ title.modulos.name }}  </h1>
+ <h3 class="">  {{ title.modulos.name }}  </h1>
  <h4> {{ title.modulos.description }} </h4>
 </div> 
 </div> 
@@ -45,16 +45,25 @@
 <div class="container">
 <div class="section-left_step">
 <div id="menu"> 
+<div id="your_col">
   {% for steps in steps %} 
               
 
-                <ol class="">
+                <ul class="timeline">
+
                 
-                <li> <a href="{% url 'video' steps.id  %}" data-toggle="lightbox" > 
+                <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                 <a href="{% url 'video' steps.id  %}" data-toggle="lightbox" > 
 
 
                 
-                <h2>  {{ steps.name  }} » </h2> </li> 
+               <span class="flag">   {{ steps.name  }} »  </span> 
+
+               </div>
+             </div> 
+               </li> 
 
                 </a>
               
@@ -67,7 +76,7 @@
 </div> 
 
 
-
+</div> 
  
 <div class="section-right_step">           
        

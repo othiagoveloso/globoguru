@@ -1,57 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 
 <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Guru Treinamentos</title>
+    <title>Guru - Login</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="{{ STATIC_URL }}css/freelancer.css" rel="stylesheet" type="text/css">
-    <link href="{{ STATIC_URL }}css/stylish-portfolio.css" rel="stylesheet" type="text/css">
+    <link href="{{ STATIC_URL }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}/css/freelancer.css" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="{{ STATIC_URL }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="{{ STATIC_URL }}/css/the-big-picture.css" rel="stylesheet">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
-
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54075243-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-
 <body>
 
- 
- 
-   
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">globo.com</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        
+                    </li>
+                    <li>
+                       
+                    </li>
+                    <li>
+                       
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
+    <!-- Page Content -->
+    
+    <div class="container">
 
-<h3>  </h3>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1>Treinamentos em vídeo-aulas</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+  </div> 
 
-    </div> 
-
-<div class="session-right">
-	<div class="login" align=""> 
+    <div class="logar">
+      <div class="container">
+  <div class="login" align=""> 
 
 <form class="form-signin" role="form" action="{% url 'django.contrib.auth.views.login' %}" method="post">
 {% csrf_token %}
-<img src="{{ STATIC_URL }}/img/login.png"/>  
+<img src="{{ STATIC_URL }}/img/logos_login.png"/>  
 <h6>  </h6>
 
 <input class="form-control" required="" placeholder="Digite seu login", id={{ form.username }} 
@@ -73,6 +104,7 @@
 </div>
 </div> 
 </div>
+</div> 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -91,14 +123,14 @@
     </div>
 
 
+    <!-- /.container -->
 
- <script src="{{ STATIC_URL }}js/jquery-1.10.2.js"></script>
-    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="{{ STATIC_URL }}js/classie.js"></script>
-    <script src="{{ STATIC_URL }}js/cbpAnimatedHeader.js"></script>
-    <script src="{{ STATIC_URL }}js/freelancer.js"></script>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="{{ STATIC_URL }}/js/jquery-1.11.0.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
 
-</body> 
-</html> 
+</body>
+
+</html>
