@@ -3370,6 +3370,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-nav > li > a {
     padding-bottom: 19.5px;
     padding-top: 19.5px;
+    font-size: 17px;
 }
 .navbar-nav.navbar-right:last-child {
     margin-right: -15px;

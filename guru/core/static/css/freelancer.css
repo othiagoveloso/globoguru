@@ -745,16 +745,7 @@ padding-left: 5%;
 }
 
 
-body {  
-  margin: 0;
-  padding: 0;
-  background: rgb(230,230,230);
-  
-  color: rgb(50,50,50);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 112.5%;
-  line-height: 1.6em;
-}
+
 
 /* ================ The Timeline ================ */
 
@@ -773,7 +764,7 @@ body {
   top: 0;
   content: ' ';
   display: block;
-  width: 6px;
+  width: 5px;
   height: 100%;
   margin-left: -3px;
   background: rgb(80,80,80);
@@ -849,8 +840,8 @@ body {
   right: -40px;
   content: ' ';
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   margin-top: -10px;
   background: #fff;
   border-radius: 10px;
@@ -859,7 +850,7 @@ body {
 }
 
 .direction-r .flag:before {
-  left: -40px;
+  left: -43px;
 }
 
 .direction-l .flag:after {
