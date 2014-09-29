@@ -235,12 +235,13 @@ h3.border3:after {
 }
 
 h3.border4:after {
-    background-color: #ca4040;
+    background-color: ;
     content: "";
     display: block;
     height: 7px;
     margin-top: 8px;
     width: 82px;
+    
 }
 
 h3.border {

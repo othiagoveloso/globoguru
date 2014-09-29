@@ -1350,10 +1350,11 @@ pre code {
 
 #menu {
 width:400px;
-font-size: 25px;
+font-size: 18px;
 padding:5px;  
 color: #333333;
 font-family: 'Exo', sans-serif;
+padding-top: 5%;
 
 
 }
