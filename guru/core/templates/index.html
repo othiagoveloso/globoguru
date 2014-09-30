@@ -83,11 +83,11 @@
 
                      
                     
-                    {% for Spotlight in Spotlight %}
-                        {% if Spotlight.status == "p" %}
+                   <!-- {% for Spotlight in Spotlight %}
+                        {% if Spotlight.status == "p" %} -->
                     
                     <div class="section-left"> 
-                      {% load embed_video_tags %}
+                  <!--    {% load embed_video_tags %}
             {% video Spotlight.video as my_video %}
      <iframe 
     src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=0069DE&amp;autoplay=1" 
@@ -101,11 +101,11 @@
                     
                         {% endif %}
                     {% endfor %}
-                     </div> 
+                     </div> -->
 
                     <div class="section-right"> 
 
-          <img src="{{ STATIC_URL }}/img/monitor.png"/>
+       <!--   <img src="{{ STATIC_URL }}/img/monitor.png"/> --> 
 
 
 
@@ -176,7 +176,7 @@
 
     <section id="portfolio" class="section2">
         <div class="container">
-            <h3 class="border">Últimos <strong> Treinamentos </strong> </h3>
+            <h3 class="border"> <strong> Treinamentos </strong> </h3>
                 <h1></h1>    
             <div class="row">
                 <div class="col-lg-12 text-center">
