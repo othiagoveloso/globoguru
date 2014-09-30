@@ -241,7 +241,7 @@ h3.border4:after {
     height: 7px;
     margin-top: 8px;
     width: 82px;
-    
+
 }
 
 h3.border {
@@ -700,7 +700,7 @@ width: ;
 
 background:none repeat scroll 0 0 rgba(255, 255, 255, 0.7);
 text-align: center;
-width: 35%;
+width: 52%;
 border-radius: 10px 10px 10px 10px ;
 padding: 5%;
 margin-left: auto;
@@ -718,7 +718,7 @@ overflow: hidden;
 
 .logar{
 
-padding-top: 3%;
+padding-right: 30%;
 
 }
 
@@ -1036,6 +1036,11 @@ h2:before {
     text-align: center;
     vertical-align: middle;
     width: 2em;
+
+}
+
+
+
 
 }
 

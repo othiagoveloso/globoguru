@@ -52,12 +52,22 @@ def modulo(request,slug):
      context = { 'modulos': modulos }
      return render(request, 'modulos.html', context)
 
+
+@login_required
+def voltar_modulo(request,slug):
+     
+     modulos = Modulo.objects.get(slug=slug)
+     training = Modulo.objects.get(trainings_id=modulos)
+     etapas = Step.objects.filter(id=training)
+     context = { 'training': etapas }
+     return render(request, 'modulos.html', context)     
+
 @login_required
 def modulos(request,slug,template_name='modulos.html'):
     
     list_training = Training.objects.get(slug=slug)
-    modulos = Modulo.objects.filter(trainings_id=list_training)
-    return render(request, template_name, { 'modulos':modulos, 'title':modulos[0] } )
+    modulos = Modulo.objects.filter(trainings_id=list_training.id)
+    return render(request, template_name, { 'modulos':modulos, 'title':modulos[0],'titles':modulos } )
 
 
 def training_name(request,slug,template_name='modulos.html'):
