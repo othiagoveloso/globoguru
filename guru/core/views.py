@@ -92,13 +92,13 @@ def etapas(request,slug,template_name='etapas.html'):
 @login_required
 def next(request,slug,template_name='etapas.html'):
     
-    steps = Step.objects.get(id=id)
-    list_modulo = Modulo.objects.get(slug=steps.modulos_id)
-    step = Step.objects.filter(steps=list_modulo)
+    step = Step.objects.get(id=id)
+    list_modulo = Modulo.objects.filter(slug=step.modulos_id)
+    steps = Step.objects.next(modulos_id=list_modulo)
     
     
     
-    return render(request, template_name,{ 'steps':steps, 'titles':step[0],})    
+    return render(request, template_name,{ 'steps':steps, 'title':steps[0],'movie':list_modulo.video})
 
 
 
