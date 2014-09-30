@@ -55,7 +55,7 @@ class Modulo(Usual):
 	  position = models.PositiveSmallIntegerField ("Position", blank=True,null=True)
     
           class Meta:
-             ordering = ['-name']
+             ordering = ['position']
 
 
           def __unicode__(self): 
