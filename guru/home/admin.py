@@ -4,7 +4,7 @@ from guru.home.models import Spotlight, Carousel
 
 class SpotlightAdmin(admin.ModelAdmin):
 
-    list_display = ('video','status',)
+    list_display = ('video','status','title', 'subtitle')
     list_editable =( 'status',)
     fields = ('status','title', 'subtitle','video',)
     

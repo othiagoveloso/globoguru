@@ -103,7 +103,18 @@
                     {% endfor %}
                      </div> -->
 
+                     </div>
+
                     <div class="section-right"> 
+
+                        {% for Spotlight in Spotlight %}
+                        {% if Spotlight.status == "p" %}
+                       
+                         <h1> {{Spotlight.title}} </h1> 
+                        <strong>  {{Spotlight.subtitle}} </strong> 
+
+                         {% endif %}
+                    {% endfor %}
 
        <!--   <img src="{{ STATIC_URL }}/img/monitor.png"/> --> 
 
@@ -111,7 +122,7 @@
 
                        
 
-                </div>
+                
             </div>
          </div>   
         </div>     
