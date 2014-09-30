@@ -54,8 +54,12 @@ class Modulo(Usual):
 	  video = EmbedVideoField(blank=True)  # same like models.URLField()
 	  position = models.PositiveSmallIntegerField ("Position", blank=True,null=True)
     
+          class Meta:
+             ordering = ['position']
+
+
           def __unicode__(self): 
-             return (self.name)    
+              return (self.name)    
 
 #Classe de etapas ( herdeira de classe abstrata,com chave estrangeira de modulo )
 class Step(Usual):
