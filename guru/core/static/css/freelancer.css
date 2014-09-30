@@ -213,7 +213,7 @@ h3.border:after {
 }
 
 h3.border2:after {
-    background-color: #3190f1;
+    background-color: #e0901f;
     content: "";
     display: block;
     height: 7px;
@@ -226,7 +226,7 @@ h3.border2:after {
 
 
 h3.border3:after {
-    background-color: #509743;
+    background-color: #e0901f;
     content: "";
     display: block;
     height: 7px;
