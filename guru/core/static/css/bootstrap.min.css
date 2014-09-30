@@ -1043,7 +1043,7 @@ pre code {
     width: 75px;
 }
 .col-md-3 {
-    width: 25%;
+    width: 230%;
     padding-left: 2%
 }
 
@@ -1056,6 +1056,10 @@ pre code {
 
 .col-md-3 a {
     padding-top: 2%
+}
+
+.col-md-3 h2:hover {
+    color: #0669DE;
 }
 
 .col-md-2 {
