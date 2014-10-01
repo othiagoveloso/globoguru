@@ -204,7 +204,7 @@ section {
 }
 
 h3.border:after {
-    background-color: #333333;
+    background-color: #ff8d13;
     content: "";
     display: block;
     height: 7px;
@@ -226,7 +226,7 @@ h3.border2:after {
 
 
 h3.border3:after {
-    background-color: #e0901f;
+    background-color: #ff8d13;
     content: "";
     display: block;
     height: 7px;
@@ -846,7 +846,7 @@ padding-left: 5%;
   margin-top: -10px;
   background: #fff;
   border-radius: 10px;
-  border: 4px solid rgb(213,146,30);
+  border: 3px solid rgb(255,141,19);
   z-index: 10;
 }
 
