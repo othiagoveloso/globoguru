@@ -275,13 +275,13 @@ section.training {
 
 .section-left {
     
-    float: left;
+    
     width: 100%;
-    padding-right: 30%;
+    padding-right: %;
     padding-bottom: 3%;
     font-family: 'Montserrat', sans-serif;    
     font-size: 30px;
-
+    text-align: center;
 }
 
 

@@ -85,12 +85,13 @@
                     
                    
                     
-                    <div class="section-left"> 
+                    <div class="section-left" align="center"> 
                   
                         {% for Spotlight in Spotlight %}
                         {% if Spotlight.status == "p" %}
 
                 {{ Spotlight.title }}
+                <h4>{{ Spotlight.subtitle }}</h4> 
 
 
                   <!--    {% load embed_video_tags %}
