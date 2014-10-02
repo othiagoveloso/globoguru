@@ -79,14 +79,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3><small></small></h3>
+                    
 
                      
                     
-                   <!-- {% for Spotlight in Spotlight %}
-                        {% if Spotlight.status == "p" %} -->
+                   
                     
                     <div class="section-left"> 
+                  
+                        {% for Spotlight in Spotlight %}
+                        {% if Spotlight.status == "p" %}
+
+                {{ Spotlight.title }}
+
+
                   <!--    {% load embed_video_tags %}
             {% video Spotlight.video as my_video %}
      <iframe 
@@ -96,12 +102,12 @@
 
     </iframe> 
 
-  {% endvideo  %}
+  {% endvideo  %} --> 
     
                     
                         {% endif %}
                     {% endfor %}
-                     </div> -->
+                     </div> 
 
                      </div>
 
@@ -129,7 +135,7 @@
 <div class="accordion-group">
 <div class="accordion-heading">
 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-    sobre... <!--<i class="fa fa-plus-circle fa-stack-1x fa-inverse"></i> -->
+    Como funciona: <!--<i class="fa fa-plus-circle fa-stack-1x fa-inverse"></i> -->
  
 </a>
 
