@@ -31,9 +31,9 @@ urlpatterns = patterns('',
 
      url(r'^etapas/(?P<id>\d+)$', 'guru.core.views.video', name='video'),
 
-     url(r'^play/$', 'guru.core.views.aovivo', name='aovivo'),
+     url(r'^globotreinamentos/$', 'guru.core.views.aovivo', name='aovivo'),
 
-     url(r'^play/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
+     url(r'^globotreinamentos/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
 
      url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html'}),
      
