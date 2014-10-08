@@ -61,7 +61,7 @@
 
 
                 
-               <span class="flag">   {{ steps.name  }} »  </span> 
+               <span class="flag">   {{ steps.name  }} »  </span>  
 
                </div>
              </div> 
@@ -76,6 +76,7 @@
   
      
   {% endfor %}   
+
 
 
 
@@ -96,15 +97,24 @@
     
   
 
-
+       
 
 
 
   </iframe> 
 
 
+
+
 {% endvideo %}
 
+{% load embed_video_tags %}
+{% video movie as my_video %}
+
+
+{{ video.thumbnail  }}
+
+{% endvideo %}
 
 
 
@@ -116,7 +126,23 @@
 </div>
 
 </div> 
+
+ <div align="center">
  
+
+
+        
+
+ <a class="btn" href="{% url 'etapas'  proximo_modulo %}">  
+
+           próximo módulo:<br>    {{proximo_modulo}} »
+
+  </a>           
+
+
+
+</div> 
+
 <div>
   
   <div class="container"> 
