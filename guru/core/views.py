@@ -114,6 +114,7 @@ def video(request,id, template_name='etapas.html'):
     
     modulos = Modulo.objects.all()
     proximo_modulo = ""
+    
     count = 0
     quantidade = len(modulos)
 
@@ -123,6 +124,14 @@ def video(request,id, template_name='etapas.html'):
 
         if mod == list_modulo:
             proximo_modulo = modulos[count]
+
+        
+            
+
+        
+
+      
+
 
 
     steps = Step.objects.filter(modulos_id=list_modulo)
