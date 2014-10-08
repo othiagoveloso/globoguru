@@ -137,7 +137,7 @@ def video(request,id, template_name='etapas.html'):
     steps = Step.objects.filter(modulos_id=list_modulo)
 
     
-    return render(request, template_name,{'proximo_modulo':proximo_modulo.slug, 'movie':step.video, 'steps':steps, 'title':steps[0], 'step':step })    
+    return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'movie':step.video, 'steps':steps, 'title':steps[0], 'step':step })    
     
 
 
