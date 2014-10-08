@@ -23,8 +23,9 @@
   <li><a href="/treinamentos/publicacao-core ">Treinamento: {{ title.modulos.trainings }}</a></li>
 <br> 
   <li class="active">Total de módulos: {{ quantidade }}</li>
-  <br> <br> 
+  <br> 
   <li class="active">Assistindo a etapa: {{step.name}}</li>
+  <li class="active"> {{DateTime}}</li>
 </ol>
 
                 </h5> 
@@ -50,7 +51,7 @@
 
 
 
-  <hr> 
+  
   clique em uma etapa da timeline para assistir o vídeo e/ou ter informações adicionais:
   {% for steps in steps %} 
               
@@ -90,7 +91,10 @@
 
 </div> 
  
-<div class="section-right_step">           
+<div class="section-right_step">    
+
+
+ 
        
             {% load embed_video_tags %}
             {% video movie as my_video %}
@@ -124,10 +128,14 @@
 
 </div> 
 </div> 
+
 </div> 
 
 
+
+
 </div>
+
 
 </div> 
 
@@ -137,7 +145,7 @@
 
         
 
- <a class="btn" href="{% url 'etapas'  proximo_modulo %}">  
+ <a class="btn2" href="{% url 'etapas'  proximo_modulo %}">  
 
           Próximo módulo »
 

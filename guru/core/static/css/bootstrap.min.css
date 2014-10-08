@@ -399,7 +399,8 @@ cite {
 .text-muted {
     color: #524e46;
     padding-bottom: 5%;
-    width: 370px;
+    width: 350px;
+    padding-left: 3%;
 }
 .text-primary {
     color: #2C3E50;
@@ -1367,6 +1368,7 @@ padding-top: 5%;
 
     color:#FF8D13 ;
     font-family: 'Exo', sans-serif;
+    font-size: 40px; 
 }
 
 
@@ -1825,6 +1827,32 @@ textarea.input-lg, select.input-lg[multiple] {
     text-transform: uppercase;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
+
+
+
+.btn2 {
+    -moz-user-select: none;
+    
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 3px 3px 3px 3px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 10px 15px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    background: none repeat scroll 0 0 #E7E7E7;
+    color: black;
+    font-family: "Proxima Nova",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: thin dotted;
     outline-offset: -2px;

@@ -191,6 +191,7 @@
             <div class="">
                 <div class="col-lg-12 text-center">
                     <div class="section-left2">
+                      
                     
 
                      
@@ -199,12 +200,16 @@
                         {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
                    <a href="{% url 'modulos' Training.slug   %} "> 
                     <img class="img-responsive" src="{{ STATIC_URL }}/img/publ.png">
+
                    {{ Training.name }}
+                   {{ Training.icon }}
+
 
 
                     </a>
                         {% endif %}
                     {% endfor %}
+                     </div> 
                      </div> 
 
                     <div class="section-right"> 
