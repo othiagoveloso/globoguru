@@ -288,7 +288,7 @@ section.training {
 .section-left2 {
     
     float: left;
-    width: 50%;
+    width: ;
     padding-right: 30%;
     text-align: left;
 
@@ -1036,6 +1036,14 @@ h2:before {
 
 }
 
+
+
+
+
+
+
+#init li  {
+      display:inline
 
 
 
