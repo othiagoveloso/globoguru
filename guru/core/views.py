@@ -84,8 +84,10 @@ def etapas(request,slug,template_name='etapas.html'):
     
 
     list_modulo = Modulo.objects.get(slug=slug)
+    steps = Step.objects.filter(modulos_id=list_modulo)
+    var = Training.objects.all() 
     
-    modulos = Modulo.objects.all()
+    modulos = Modulo.objects.filter(trainings_id=var)
     proximo_modulo = ""
     count = 0
     quantidade = len(modulos)
@@ -98,7 +100,7 @@ def etapas(request,slug,template_name='etapas.html'):
             proximo_modulo = modulos[count]
 
 
-    steps = Step.objects.filter(modulos_id=list_modulo)
+    
     
     
     return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'steps':steps, 'title':steps[0],'movie':list_modulo.video})
