@@ -47,17 +47,22 @@
         
 
             <div class="col-md-3 portfolio-item">
-                <a href="{% url 'modulos' Training.slug   %} ">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+
+               <li> <a href="{% url 'modulos' Training.slug   %} ">
                  <img class="img-responsive" src="{{ STATIC_URL }}/img/publ.png">
                 {{ Training.name }}
                     
                     <img src="{{ Training.icon }}" alt="" />
  
-               </a>
+               </a>  
+
+             </li> 
                
 
               
-                
+                </ul>
             
 
             </div>
