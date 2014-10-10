@@ -119,7 +119,7 @@ def video(request,id, template_name='etapas.html'):
     step = Step.objects.get(id=id)
     list_modulo = Modulo.objects.get(id=step.modulos_id)
     
-    modulos = Modulo.objects.all()
+    modulos = Modulo.objects.filter(trainings_id=list_modulo.trainings_id)
     proximo_modulo = ""
     
     count = 0
