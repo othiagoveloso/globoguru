@@ -82,12 +82,21 @@ def training_name(request,slug,template_name='modulos.html'):
 @login_required
 def etapas(request,slug,template_name='etapas.html'):
     
-
-    list_modulo = Modulo.objects.get(slug=slug)
-    steps = Step.objects.filter(modulos_id=list_modulo)
-    var = Training.objects.all() 
     
-    modulos = Modulo.objects.filter(trainings_id=var)
+    list_modulo = Modulo.objects.get(slug=slug)
+
+    list_training = Training.objects.all()
+
+    
+
+
+
+
+    steps = Step.objects.filter(modulos_id=list_modulo)
+    
+
+    modulos = Modulo.objects.filter(trainings_id=list_training)
+    
     proximo_modulo = ""
     count = 0
     quantidade = len(modulos)
@@ -127,12 +136,7 @@ def video(request,id, template_name='etapas.html'):
         if mod == list_modulo:
             proximo_modulo = modulos[count]
 
-        
-            
-
-        
-
-      
+    
 
 
 
