@@ -90,6 +90,8 @@ def etapas(request,slug,template_name='etapas.html'):
     
     
     proximo_modulo = ""
+    
+    
     count = 0
     quantidade = len(modulos)
 
@@ -100,10 +102,14 @@ def etapas(request,slug,template_name='etapas.html'):
         if mod == list_modulo:
             proximo_modulo = modulos[count]
 
+        
+                
+    
 
-    
-    
-    
+               
+           
+
+                
     return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'steps':steps, 'title':steps[0],'movie':list_modulo.video})
 
 
@@ -156,7 +162,7 @@ def videovivo(request,slug, template_name='ao-video.html'):
     return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})
 
 
-def login(request, template_name="login.html"):
+def login(request, template_name="login2.html"):
 
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST) # Veja a documentacao desta funcao
@@ -167,7 +173,7 @@ def login(request, template_name="login.html"):
             User(request, form.get_user())
             return HttpResponseRedirect("/") # redireciona o usuario logado para a pagina inicial
         else:
-            return render(request, "login.html", {"form": form})
+            return render(request, "login2.html", {"form": form})
     
     #se nenhuma informacao for passada, exibe a pagina de login com o formulario
     return render(request, template_name, {"form": AuthenticationForm()})
