@@ -171,7 +171,7 @@ def login(request, template_name="login2.html"):
             #se o formulario for valido significa que o Django conseguiu encontrar o usuario no banco de dados
             #agora, basta logar o usuario e ser feliz.
             User(request, form.get_user())
-            return HttpResponseRedirect("/") # redireciona o usuario logado para a pagina inicial
+            return HttpResponseRedirect("/?next=%s") # redireciona o usuario logado para a pagina inicial
         else:
             return render(request, "login2.html", {"form": form})
     
@@ -184,6 +184,13 @@ def logout(request, template_name="logout.html"):
     
     return render(request, template_name,)
 
+
+@login_required
+def voltar(request,slug,template_name='modulos.html'):
+    
+    list_training = Training.objects.get(slug=slug)
+    modulos = Modulo.objects.filter(trainings_id=list_training.id)
+    return render(request, template_name, { 'modulos':modulos.slug, 'title':modulos[0],'titles':modulos } )
 
 
 

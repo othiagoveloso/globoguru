@@ -5,7 +5,7 @@ body {
 }
 
 p {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 p.small {
@@ -204,7 +204,7 @@ section {
 }
 
 h3.border:after {
-    background-color: #ff8d13;
+    background-color: #333333;
     content: "";
     display: block;
     height: 7px;
@@ -226,7 +226,7 @@ h3.border2:after {
 
 
 h3.border3:after {
-    background-color: #ff8d13;
+    background-color: #333333;
     content: "";
     display: block;
     height: 7px;

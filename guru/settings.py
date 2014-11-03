@@ -130,7 +130,7 @@ USE_TZ = True
 
 MEDIA_ROOT = 'staticfiles'
 
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 STATIC_ROOT = BASE_DIR.child('staticfiles',)
 

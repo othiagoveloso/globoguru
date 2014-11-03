@@ -17,8 +17,8 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  font-size: 50px;
-  color:#ff8d13;
+  font-size: 45px;
+  color:#333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +30,7 @@
   font-weight: normal;
   line-height: 1;
   font-size: 50px;
-  color:#ff8d13;
+  color:#333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,7 +42,7 @@
   font-weight: normal;
   line-height: 1;
   font-size: 50px;
-  color:#ff8d13;
+  color:#333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +60,7 @@
   font-size: 3em;
 }
 .fa-4x {
-  font-size: 4em;
+  font-size: 60px;
 }
 .fa-5x {
   font-size: 5em;

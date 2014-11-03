@@ -37,6 +37,8 @@ urlpatterns = patterns('',
      
      url(r'^logout/$', 'django.contrib.auth.views.logout',{'template_name': 'logout.html'}), 
 
+     url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
+
 
      
 
