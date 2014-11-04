@@ -40,6 +40,8 @@ urlpatterns = patterns('',
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
 
 
+    
+
      
 
 

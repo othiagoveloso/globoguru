@@ -141,7 +141,6 @@
 
 </div>
 <!--<div id="collapseTwo" class="accordion-body collapse"> --> 
-<div class="accordion-inner">
 
 
               <div class="col-md-4">
@@ -200,7 +199,7 @@
                         {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
                    
                    <li><a href="{% url 'modulos' Training.slug   %} "> 
-                    <img class="img-responsive" src="{{ STATIC_URL }}/img/publ.png">
+                    <img class="img-responsive" src="{{ STATIC_URL }}/{{ Training.icon }}">
 
                    {{ Training.name }} 
                    

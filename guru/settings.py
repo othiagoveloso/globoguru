@@ -128,7 +128,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-MEDIA_ROOT = 'staticfiles'
+
+
+MEDIA_ROOT = 'guru/core/static'
 
 MEDIA_URL = '/media/'
 

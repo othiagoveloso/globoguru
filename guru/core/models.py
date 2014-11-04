@@ -24,7 +24,7 @@ class Usual(models.Model):
     time = models.DateTimeField(auto_now_add= True)
     name = models.CharField(_('titulo'),max_length=100)
     description = models.TextField(_('descricao'),max_length=100,blank=True)
-    icon = models.ImageField(_('icone:'),null=True, blank=True, upload_to= 'galeria/trumbnail')
+    icon = models.ImageField(_('icone:'),null=True, blank=True, upload_to= 'galeria')
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
 
 
