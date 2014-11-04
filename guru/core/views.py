@@ -147,13 +147,13 @@ def video(request,id, template_name='etapas.html'):
     return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'movie':step.video, 'steps':steps, 'title':steps[0], 'step':step })    
     
 
-
+@login_required
 def aovivo(request, template_name='ao-vivo.html'):
     training = Training.objects.all()
     
     return render(request, template_name,{'Training':training})
 
-
+@login_required
 def videovivo(request,slug, template_name='ao-video.html'):
     movies = Training.objects.get(slug=slug)
     training = Training.objects.all()
@@ -177,6 +177,11 @@ def login(request, template_name="login2.html"):
     
     #se nenhuma informacao for passada, exibe a pagina de login com o formulario
     return render(request, template_name, {"form": AuthenticationForm()})
+
+
+
+
+
 
 
 def logout(request, template_name="logout.html"):
