@@ -90,12 +90,12 @@ def etapas(request,slug,template_name='etapas.html'):
     
     list_modulo = Modulo.objects.get(slug=slug)
     steps = Step.objects.filter(modulos_id=list_modulo)
-    modulos = Modulo.objects.filter(trainings_id=list_modulo.trainings_id)
+    
 
     
     
     proximo_modulo = ""
-    
+
     
     
     count = 0
