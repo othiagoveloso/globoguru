@@ -67,12 +67,7 @@ def modulos(request,slug,template_name='modulos.html'):
     
     list_training = Training.objects.get(slug=slug)
     modulos = Modulo.objects.filter(trainings_id=list_training.id)
-    
-    steps = Step.objects.filter(modulos_id=modulos)
-
-    quantidade = len(steps)
-
-    return render(request, template_name, { 'quantidade':quantidade,'modulos':modulos, 'title':modulos[0],'titles':modulos } )
+    return render(request, template_name, { 'modulos':modulos, 'title':modulos[0],'titles':modulos } )
 
 
 def training_name(request,slug,template_name='modulos.html'):
@@ -97,10 +92,8 @@ def etapas(request,slug,template_name='etapas.html'):
     proximo_modulo = ""
     
     
-    
     count = 0
     quantidade = len(modulos)
-
 
     for mod in modulos:
         if count < quantidade-1:
@@ -160,7 +153,7 @@ def aovivo(request, template_name='ao-vivo.html'):
     
     return render(request, template_name,{'Training':training})
 
-@login_required
+
 def videovivo(request,slug, template_name='ao-video.html'):
     movies = Training.objects.get(slug=slug)
     training = Training.objects.all()
