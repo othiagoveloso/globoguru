@@ -23,7 +23,7 @@
     <!-- Bootstrap Core JS -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body id="quadro">
 	
 	<section class="container">
 	    <section class="login-form">
@@ -32,7 +32,7 @@
 					
 					<form method="post" action="{% url 'django.contrib.auth.views.login' %}" role="form" >
 						{% csrf_token %}
-						<h2 align="left"> Guru - login  </h2> <h5> vídeo aulas sobre as plataformas da globo.com </h5>
+						<h2 align="left"> Entrar  </h2> 
 						
 						<label>Entre com seu login</label>			
 						<input placeholder="" required class="form-control input-lg" id={{ form.username }}

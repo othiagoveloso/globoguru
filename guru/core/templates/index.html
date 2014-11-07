@@ -19,7 +19,8 @@
     <link href="{{ STATIC_URL }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
+    <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,500' rel='stylesheet' type='text/css'>
 
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,7 +38,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default2 navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -52,9 +53,9 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav2 navbar-right">
 
-                    <li> <a href="#"> Olá, {{ user }} </a> </li>
+                    
                  {% if user.is_anonymous %}
       <li> <a href="{% url 'django.contrib.auth.views.login' %}">login</a> </li> 
       {% else %}
@@ -90,8 +91,11 @@
                         {% for Spotlight in Spotlight %}
                         {% if Spotlight.status == "p" %}
 
-                    {{ Spotlight.title}} </h1>
-                {{ Spotlight.subtitle}} </h2>
+                    {{ Spotlight.title}} {{ user }} <p> 
+                {{ Spotlight.subtitle}} </h2> <p> 
+                     <button class="btn" data-toggle="modal" data-target="#myModal">
+  Entenda como funciona
+</button>
 
                   <!--    {% load embed_video_tags %}
             {% video Spotlight.video as my_video %}
@@ -125,6 +129,27 @@
          </div>   
         </div>     
     </section>
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">  
+
+    <div class="">
+      <div class="">
+        
+        
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+
+
+       
+      </div>
+    </div>
+  </div> 
 
     <section class="success" id="about">
         
@@ -233,6 +258,9 @@
   </a>              
        </div>    -->
     </section>
+
+
+
 
             
      

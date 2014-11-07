@@ -34,6 +34,7 @@
 
 
 
+
         
 
 <div>
@@ -46,6 +47,18 @@
                 <ol class="breadcrumb">
                 
                 <li> <a href="{% url 'videovivo' Training.slug  %}" >
+
+                              {% load embed_video_tags %}
+                              {% video Training.video as my_video %}
+      
+                                     
+                               {{ my_video.thumbnail }}
+    
+  
+
+
+
+                              {% endvideo %}
 
 
                   

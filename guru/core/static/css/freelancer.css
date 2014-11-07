@@ -119,7 +119,7 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 20px 0;
+        padding: 10px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -166,15 +166,16 @@ header .intro-text .skills {
 
 section {
     padding: 100px 0;
-    color: #333333;
+    color: white;
     
 }
 
 .section {
 
-    background: none repeat scroll 0 0 #F7F7F7 ;
+    background-image: url("/static/img/blackboard2.png");
     background-repeat:no-repeat;
     background-attachment:fixed;
+    background-size: 100%;
     border-bottom: 1px solid #DDDDDD;
     border-top: 1px solid #DDDDDD;
     box-shadow: 0 1px 0 #FFFFFF inset, 0 -1px 0 #FFFFFF inset;
@@ -349,6 +350,7 @@ section.success {
     padding-left: 0%;
     padding-bottom: 0%;
     border-bottom: 1px solid #DDDDDD;
+    opacity: 0.9;
 }
 .accordion-heading{
     text-align: left;
@@ -735,6 +737,8 @@ padding-right: 30%;
 color:black;
 
 }
+
+
 
 .login h4 {
 

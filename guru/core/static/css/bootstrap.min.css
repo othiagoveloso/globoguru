@@ -1,7 +1,7 @@
 
 @import "//fonts.googleapis.com/css?family=Lato:400,700,400italic";
 html {
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Exo',sans-serif;
     background-color:; 
 
 }
@@ -3071,6 +3071,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .nav > li {
     display: block;
     position: relative;
+
 }
 .nav > li > a {
     display: block;
@@ -3078,8 +3079,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     position: relative;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #ECF0F1;
+    background-color: ;
     text-decoration: none;
+    color: #0069DE;
 }
 .nav > li.disabled > a {
     color: #B4BCC2;
@@ -3416,6 +3418,15 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     padding-top: 19.5px;
     font-size: 17px;
 }
+
+.navbar-nav2 > li > a {
+    padding-bottom: 19.5px;
+    padding-top: 19.5px;
+    font-size: 17px;
+    color: white;
+}
+
+
 .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
 }
@@ -3523,15 +3534,26 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 }
 .navbar-default {
-    background:none repeat scroll 0 0 #3E8ACF;
+    background-image: linear-gradient(#333333, #222222);
     border-color: rgba(1, 1, 1, 1);
+    
 }
+
+
+
+.navbar-default2 {
+    background-image: linear-gradient(#333333, #222222);
+    border-color: rgba(1, 1, 1, 1);
+    opacity: 0.7;
+}
+
+
 .navbar-default .navbar-brand {
     color: #FFFFFF;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     background-color: rgba(0, 0, 0, 0);
-    color: #016FDE;
+    color: #777777;
 }
 .navbar-default .navbar-text {
     color: #777777;

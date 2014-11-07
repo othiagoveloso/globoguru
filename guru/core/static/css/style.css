@@ -9,6 +9,15 @@
 
 
 
+#quadro {
+
+  background-image: url("/static/img/blackboard2.png");
+  background-size: 100%;
+
+
+}
+
+
 
 .login-form {
 	margin: 50px auto;

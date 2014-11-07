@@ -67,7 +67,12 @@ def modulos(request,slug,template_name='modulos.html'):
     
     list_training = Training.objects.get(slug=slug)
     modulos = Modulo.objects.filter(trainings_id=list_training.id)
-    return render(request, template_name, { 'modulos':modulos, 'title':modulos[0],'titles':modulos } )
+    
+    steps = Step.objects.filter(modulos_id=modulos)
+
+    quantidade = len(steps)
+
+    return render(request, template_name, { 'quantidade':quantidade,'modulos':modulos, 'title':modulos[0],'titles':modulos } )
 
 
 def training_name(request,slug,template_name='modulos.html'):
@@ -90,10 +95,12 @@ def etapas(request,slug,template_name='etapas.html'):
     
     
     proximo_modulo = ""
+    modulo_anterior = ""
     
     
     count = 0
     quantidade = len(modulos)
+
 
     for mod in modulos:
         if count < quantidade-1:
