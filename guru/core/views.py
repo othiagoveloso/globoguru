@@ -95,7 +95,7 @@ def etapas(request,slug,template_name='etapas.html'):
     
     
     proximo_modulo = ""
-    modulo_anterior = ""
+    
     
     
     count = 0
