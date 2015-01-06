@@ -12,7 +12,8 @@ STATUS_CHOICES = (
 STATUS_SEGMENT = (
     ('p', 'Plataforma'),
     ('pr', 'Produto'), 
-    ('av', 'ao vivo')   
+    ('av', 'ao vivo'),
+    ('nv', 'novidades')   
 )
 
 def foo(instance, filename):
@@ -87,4 +88,3 @@ class Step(Usual):
 
 
 
-# Create your models here.

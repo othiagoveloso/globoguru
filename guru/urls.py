@@ -33,6 +33,8 @@ urlpatterns = patterns('',
 
      url(r'^globotreinamentos/(?P<slug>[\w-]+)', 'guru.core.views.videovivo', name='videovivo'),
 
+     url(r'^novidades/(?P<slug>[\w-]+)', 'guru.core.views.novidades', name='novidades'),
+
      url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login2.html'}),
      
      url(r'^logout/$', 'django.contrib.auth.views.logout',{'template_name': 'logout.html'}), 

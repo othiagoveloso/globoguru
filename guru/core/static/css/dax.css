@@ -1,0 +1,137 @@
+#glb-menu .submenu-aba-n1, #glb-menu .submenu-aba-n2 {
+    background-image: url("http://plataformas.admin.globoi.com/pf/gc/o/ge/desktop/sprite_menu_item_om.png") !important ;
+}
+
+.cabecalho-produto .marca-produto {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("dax3.jpg");
+    background-position: 0 26px;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    width: 100px;
+}
+
+#siteLogo {
+    background-color: transparent;
+    background-image: url("dax3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 64px;
+    margin-bottom: 10px;
+    width: 90px;
+}
+
+#glb-corpo a {
+color:#8eb41b;
+}
+
+#glb-corpo a:hover {
+color:#7d9e18;
+}
+
+#glb-menu .menu-borda-baixo {
+background-color: #8eb41b !important;
+display:block;
+}
+
+#glb-menu ul.menu-itens li a {
+	text-transform: none; /* Respeitar maiÃƒÂºsculo e minusculo no menu*/
+}
+
+body .cor-produto-border, body .cor-produto-border-hover:hover {
+    border-color: #8eb41b !important;
+}
+
+body .cor-produto-background {
+    background-color: #8eb41b !important;
+}
+
+#glb-diretorio {
+    background-color: #FF8D13; /*Cor de fundo do diretorio*/
+}
+
+#glb-diretorio .divisoria {
+    border-left: 1px solid #8eb41b; /*Cor da divisÃƒÂ³ria do diretorio*/
+    padding-left: 8px;
+}
+
+#glb-rodape, #glb-rodape .glb-conteudo {
+    background-color: #FF8D13; /*Cor de fundo do rodapeÂ©*/
+}
+
+#glb-rodape .copyright {
+    color: #FFFFFF; /*Cor da fonte do rodape*/
+}
+
+#glb-rodape a, #glb-rodape {
+    color: #FFFFFF; /*Cor de fundo do rodape*/
+}
+
+#glb-rodape {
+    background-color: #8eb41b; /*Cor de fundo do rodape*/
+}
+
+.barra-superior {
+    background: none repeat scroll 0 0 #8eb41b; /*cor da barra de pesquisa*/
+}
+
+.carrosselproduto .nav-carrosselproduto a.on {
+    color: #8eb41b !important; /*cor da bolinha do carrossel*/
+}
+
+#glb-rodape .glb-rodape-globocom {
+    background: url("http://plataformas.admin.globoi.com/pf/gc/o/ge/desktop/logo_globo_rodape.png") no-repeat scroll 0 0 transparent; /*Imagem da globo.com do rodapÃƒÂ© provisÃƒÂ³rio*/
+    height: 22px;
+    color: #7d9e18
+}
+
+#glb-rodape, #glb-rodape .glb-conteudo {
+    background-color: #7d9e18; /*Cor de fundo do rodape*/
+}
+
+#glb-diretorio {
+    background-color: #8eb41b; /*Cor de fundo do diretorio*/
+}
+
+#busca-padrao button {
+    background: url("btn_buscarOMpequeno.jpg") no-repeat scroll left top transparent;/*BotÃƒÂ£o de busca pequeno provisÃƒÂ³rio*/
+}
+
+#busca-padrao button:hover {
+    background: url("btn_buscarOMpequeno.jpg") no-repeat scroll left bottom transparent;/*BotÃƒÂ£o de busca pequeno provisÃƒÂ³rio*/
+}
+
+
+#glb-topo .cabecalho-produto {
+    padding-bottom: 23px !important;
+    padding-top: 8px !important;
+}
+
+.widget-titulo {
+    border-top-color: #8EB41B;
+}
+
+.destaque-agrupamento .destaque-topo .titulo span {
+    color: #8EB41B;
+}
+
+.destaque-agrupamento .destaque-topo {
+    border-top-color: #8EB41B;
+}
+
+.subtitulo {
+	color: #7D9E18 !important;
+}
+
+.subtitulo:hover {
+	color: #7D9E18 !important;
+}
+
+body .cor-produto-color {
+	color: #7D9E18 !important;
+}

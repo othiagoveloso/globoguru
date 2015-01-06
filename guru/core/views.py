@@ -162,6 +162,15 @@ def videovivo(request,slug, template_name='ao-video.html'):
     return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})
 
 
+def novidades(request,slug, template_name='novidades.html'):
+    movies = Training.objects.get(slug=slug)
+    training = Training.objects.all()
+    
+    
+    return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})
+
+
+
 def login(request, template_name="login2.html"):
 
     if request.method == 'POST':
