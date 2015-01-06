@@ -190,9 +190,9 @@ section {
     background: none repeat scroll 0 0 #F7F7F7 ;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    border-bottom: 1px solid #DDDDDD;
-    border-top: 1px solid #DDDDDD;
-    box-shadow: 0 1px 0 #FFFFFF inset, 0 -1px 0 #FFFFFF inset;
+    border-bottom: ;
+    border-top: ;
+    box-shadow: ;
     padding-bottom:1%;
     padding-top: 2%;
     text-align: center;
@@ -735,6 +735,7 @@ padding-right: 30%;
 .login h6, a {
 
 color:black;
+width: 99%; 
 
 }
 
