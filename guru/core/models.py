@@ -16,8 +16,7 @@ STATUS_SEGMENT = (
     ('nv', 'novidades')   
 )
 
-def foo(instance, filename):
-    return "%s/%s"% (instance.icon,filename)
+
 
 
 # Classe abstrata     
