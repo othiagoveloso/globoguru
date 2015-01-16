@@ -215,7 +215,7 @@
                         {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
                    
                    <li><a href="{% url 'modulos' Training.slug   %} "> 
-                    <img class="img-responsive" src="{{ STATIC_URL }}/{{ Training.icon }}">
+                    <img class="img-responsive" src="{{ STATIC_URL }}{{ Training.icon }}">
 
                    {{ Training.name }} 
                    
@@ -269,7 +269,7 @@
                         {% if Training.segment == "nv" %}
                    
                    <li><a href="{% url 'novidades' Training.slug   %} "> 
-                    <img class="img-responsive" src="{{ STATIC_URL }}/{{ Training.icon }}">
+                    <img class="img-responsive" src="{{ STATIC_URL }}{{ Training.icon }}">
 
                    {{ Training.name }} 
                    
