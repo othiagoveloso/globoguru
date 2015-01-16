@@ -757,7 +757,7 @@ padding-right: 30%;
 
 
 
-.login h6, a {
+.login h6 {
 
 color:black;
 width: 70%; 
@@ -766,9 +766,9 @@ width: 70%;
 
 
 
-.login h4 {
+.login h4, a {
 
-    color:red;
+    color:black;
 }
 
 .intro {
