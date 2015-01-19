@@ -140,7 +140,7 @@ EMBED_VIDEO_BACKENDS = (
 
 
 
-MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'media')
+MEDIA_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'guru/core/static')
 
 MEDIA_URL = '/media/'
 
