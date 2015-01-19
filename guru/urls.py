@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-from django.conf.urls import handler404
+
 
 from django.contrib import admin
 #from my.forms import AuthenticationForm
@@ -7,10 +7,7 @@ admin.autodiscover()
 #admin.site.login_form = AuthenticationForm
 
 urlpatterns = patterns('',
-    # Examples:
 
-
-     
      url(r'^$', 'guru.core.views.home', name='home'),
 
      url(r'^$', 'guru.core.views.home_training', name='home_training'),
@@ -41,21 +38,12 @@ urlpatterns = patterns('',
 
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
 
-     
-
-
-    
+     url(r'^admin/', include(admin.site.urls)),
 
      
-
-
-    # url(r'^blog/', include('blog.urls')),
-
-    
-    url(r'^admin/', include(admin.site.urls)),
-
 
 
 ) 
+
 
 
