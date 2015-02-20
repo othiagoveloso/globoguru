@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+
+<div class="">
+        <div class="btn-group">
+  <button type="button" class="btn btn-info"></button>
+  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#"></a></li>
+    <li><a href="plataforma"></a></li>
+    <li><a href="#"></a></li>
+
+  </ul>
+</div>
+
+        <div class="row">
+        
+            <div class="col-lg-12">
+                <h4 class="page-header">
+             <small> <a href="#"</a> 
+              </small>     <small> <a href="#"></a></small>
+                </h4>
+                
+            </div>
+
+        </div>
+
+<div>
+  <div class ="container">
+<h3 class="border" align="">{{ object.name }} </h3>
+
+
+
+</div>
+</div>
+
+ 
+
+
+<div id="video" align="center">    
+<div class="container" >      
+       
+            {% load embed_video_tags %}
+            {% video movie as my_video %}
+     <iframe 
+    src="{{ my_video.url }}?byline=0&amp;portrait=0&amp;color=0069DE&amp;autoplay=1" 
+    width="750" height="400" frameborder="0" 
+    webkitAllowFullScreen mozallowfullscreen allowFullScreen >
+    
+  
+
+
+
+{% endvideo %}
+
+  </iframe> 
+
+
+
+  </div> 
+
+    </div>
+<div>
+  <div class="container"> 
+    <h4> {{ object.description }} </h4>
+    <hr>
+
+  
+<button class="btn" data-toggle="modal" data-target="#myModal">
+  Dúvidas?
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{object.name}} </h4>
+      </div>
+      <div class="modal-body">
+         Ficou alguma dúvida ? Entre em contato pelo <strong> atendimento.treinamentos@corp.globo.com </strong>
+      </div>
+      <div class="modal-footer">
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+<h1></h1>
+
+</div> 
+ 
+
+</div> 
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

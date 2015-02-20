@@ -32,6 +32,8 @@ urlpatterns = patterns('',
 
      url(r'^novidades/(?P<slug>[\w-]+)', 'guru.core.views.novidades', name='novidades'),
 
+     url(r'^ondemand/(?P<slug>[\w-]+)', 'guru.core.views.ondemand', name='ondemand'),
+
      url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login2.html'}),
      
      url(r'^logout/$', 'django.contrib.auth.views.logout',{'template_name': 'logout.html'}), 
@@ -40,7 +42,7 @@ urlpatterns = patterns('',
 
      url(r'^admin/', include(admin.site.urls)),
 
-     
+
 
 
 ) 

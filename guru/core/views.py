@@ -46,7 +46,7 @@ def treinamentos_produto(request, template_name='treinamentos_produto.html'):
     data['object_list'] = training
     return render(request, template_name, data)      
 
-@login_required
+@login_required(redirect_field_name='next')
 def modulo(request,slug):
      modulos = Modulo.objects.get(Modulo, slug=slug)
      context = { 'modulos': modulos }
@@ -62,12 +62,17 @@ def voltar_modulo(request,slug):
      context = { 'training': etapas }
      return render(request, 'modulos.html', context)     
 
-@login_required
+@login_required(redirect_field_name='next')
 def modulos(request,slug,template_name='modulos.html'):
     
     list_training = Training.objects.get(slug=slug)
     modulos = Modulo.objects.filter(trainings_id=list_training.id)
     return render(request, template_name, { 'modulos':modulos, 'title':modulos[0],'titles':modulos } )
+
+
+
+
+
 
 
 def training_name(request,slug,template_name='modulos.html'):
@@ -79,7 +84,7 @@ def training_name(request,slug,template_name='modulos.html'):
     return render(request, template_name, data )    
 
 
-@login_required
+@login_required(redirect_field_name='next')
 def etapas(request,slug,template_name='etapas.html'):
     
     
@@ -111,6 +116,9 @@ def etapas(request,slug,template_name='etapas.html'):
 
                 
     return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'steps':steps, 'title':steps[0],'movie':list_modulo.video})
+
+
+
 
 
 
@@ -168,6 +176,14 @@ def novidades(request,slug, template_name='novidades.html'):
     
     
     return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})
+
+
+def ondemand(request,slug, template_name='ondemand.html'):
+    movies = Training.objects.get(slug=slug)
+    training = Training.objects.all()
+    
+    
+    return render(request, template_name, {'movie':movies.video,'Training':training,'object':movies})    
 
 
 

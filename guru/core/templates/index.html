@@ -48,29 +48,44 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a href="{% url 'home' %}"><img src="{{ STATIC_URL }}/img/guru_beta.png"/> </a>
+            <a href="{% url 'home' %}"><img src="{{ STATIC_URL }}img/guru_beta.png"/> </a>
+
+
+             
+
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav2 navbar-right">
-
-         
+                <ul class="nav2 navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                   
 
                     
-                 {% if user.is_anonymous %}
+     
+      
+    
+                    
+                     
+                     <li> <a href="#"> Olá, {{ user }} </a> </li>
+
+                    
+                    
+                    
+                    
+
+                    {% if user.is_anonymous %}
       <li> <a href="{% url 'django.contrib.auth.views.login' %}">login</a> </li> 
       {% else %}
-     <li>  <a href="{% url 'django.contrib.auth.views.logout' %}">Sair</a> </li> 
+     <li>  <a href="{% url 'django.contrib.auth.views.logout' %}">Logout</a> </li> 
       {% endif %}
-                    <li class="page-scroll">
-                        
-                    </li>
+                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        
-
         </div>
         <!-- /.container-fluid -->
     </nav>
@@ -78,47 +93,7 @@
  
 
 
-    <section id="portfolio" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    
-
-                 
-
-                   
-                    
-                    <div class="section-left" align="center"> 
-                  
-                        {% for Spotlight in Spotlight %}
-                        {% if Spotlight.status == "p" %}
-
-                    {{ Spotlight.title}} {{ user }} <p> 
-                {{ Spotlight.subtitle}} </h2> <p> 
-                     <button class="btn" data-toggle="modal" data-target="#myModal">
-  Entenda como funciona
-</button>
-
     
-                    
-                        {% endif %}
-                    {% endfor %}
-                     </div> 
-
-                     </div>
-
-                    <div class="section-right"> 
-
-
-      
-
-
-                       
-
-                
-            </div>
-         </div>   
-        </div>     
     </section>
 
 
@@ -165,7 +140,7 @@
 <i class="fa fa-filter fa-stack-1x fa-inverse"></i>
 </span>
 
-<h4 class="service-heading">Treinamentos</h4>
+<h4 class="service-heading">Aprenda você mesmo</h4>
 <hr>
 <p class="text-muted">Nesta página, você encontra o conteúdo sobre a plataforma ou produto que deseja aprender.</p>
 </div>
@@ -200,8 +175,8 @@
 
     <section id="portfolio" class="section2">
         <div class="container">
-            <h3 class="border"> <strong> Treinamentos </strong> </h3>
-                <h1></h1>    
+            <h3 class="border">  Aprenda <strong> você mesmo </strong> </h3>
+                <h4 align="left">Treinamentos em forma de vídeo aulas sobre produtos e plataformas, divididos em módulos e etapas</h4>    
             <div class="">
                 <div class="col-lg-12 text-center">
                     <div class="section-left2">
@@ -254,8 +229,8 @@
 
 <section id="portfolio" class="section2">
         <div class="container">
-            <h3 class="border"> <strong> Novidades </strong> </h3>
-                <h1></h1>    
+            <h3 class="border">  Fique <strong> por dentro </strong> </h3>
+                <h4 align="left">As últimas novidades sobre os produtos e plataformas explicadas em forma de vídeos</h4>    
             <div class="">
                 <div class="col-lg-12 text-center">
                     <div class="section-left2">
@@ -306,6 +281,59 @@
 
     
 
+
+<section id="portfolio" class="section2">
+        <div class="container">
+            <h3 class="border">  On <strong> Demand </strong> </h3>
+                <h4 align="left">Treinamentos gravados que foram ministrados online.</h4>    
+            <div class="">
+                <div class="col-lg-12 text-center">
+                    <div class="section-left2">
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                    
+
+                     
+                    
+                    {% for Training in training %}
+                        {% if Training.segment == "av" %}
+                   
+                   <li><a href="{% url 'novidades' Training.slug   %} "> 
+                    
+
+                   {{ Training.name }} 
+                   
+                   
+
+
+
+                    </a>
+                    </li>
+                        {% endif %}
+                    {% endfor %}
+                     </ul> 
+                   </div> 
+                     
+                     </div> 
+                     </div> 
+
+                    <div class="section-right"> 
+        
+              
+
+                </div>
+            
+            </div>
+
+           <!-- <div>
+
+            <a class="btn" href="{% url 'treinamentos' %}">  
+
+              Todos os treinamentos»
+
+  </a>              
+       </div>    -->
+    </section>
 
 
 

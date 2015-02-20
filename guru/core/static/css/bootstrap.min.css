@@ -3078,6 +3078,16 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     padding: 10px 15px;
     position: relative;
 }
+
+.nav2 >li > a {
+    
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    color:white;
+}
+
+
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: ;
     text-decoration: none;
@@ -3409,6 +3419,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-nav {
     float: left;
     margin: 0;
+    list-style: none;
 }
 .navbar-nav > li {
     float: left;
@@ -3419,12 +3430,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     font-size: 17px;
 }
 
-.navbar-nav2 > li > a {
-    padding-bottom: 19.5px;
-    padding-top: 19.5px;
-    font-size: 17px;
-    color: white;
-}
+
 
 
 .navbar-nav.navbar-right:last-child {
@@ -3542,9 +3548,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 
 .navbar-default2 {
-    background-image: linear-gradient(#333333, #222222);
+    background-color:#0c69de;
     border-color: rgba(1, 1, 1, 1);
-    opacity: 0.7;
+    opacity: ;
 }
 
 

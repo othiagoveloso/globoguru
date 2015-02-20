@@ -32,12 +32,16 @@
 					
 					<form method="post" action="{% url 'django.contrib.auth.views.login' %}" role="form" >
 						{% csrf_token %}
-						<h2 align="left"> Entrar  </h2> 
+						<div align="center"> <img src="{{ STATIC_URL }}img/guru_login_beta.png"/> 
+   					     
+ 					     <p> vídeo aulas sobre as plataformas da globo.com </p>
+						</div> 
 						
-						<label>Entre com seu login</label>			
+						
+						<label>Login:</label>			
 						<input placeholder="" required class="form-control input-lg" id={{ form.username }}
 						
-						<label>Entre com sua senha</label>			
+						<label>Senha:</label>			
 						<input type="password" placeholder="" required class="form-control input-lg" id={{ form.password }}
 						
 						
