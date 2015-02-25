@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+import settings
 
 
 from django.contrib import admin
@@ -7,6 +8,9 @@ admin.autodiscover()
 #admin.site.login_form = AuthenticationForm
 
 urlpatterns = patterns('',
+
+      (r'^media/(?P<path>.*)$', 'django.views.static.serve',
+                 {'document_root': settings.MEDIA_ROOT}),
 
      url(r'^$', 'guru.core.views.home', name='home'),
 
@@ -41,6 +45,9 @@ urlpatterns = patterns('',
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
 
      url(r'^admin/', include(admin.site.urls)),
+
+
+
 
 
 

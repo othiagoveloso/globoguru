@@ -140,7 +140,7 @@ EMBED_VIDEO_BACKENDS = (
 
 
 
-MEDIA_ROOT = '/media/'
+MEDIA_ROOT = 'guru/core/static'
 
 MEDIA_URL = '/media/'
 
