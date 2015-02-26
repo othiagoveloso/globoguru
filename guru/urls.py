@@ -11,6 +11,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
 
+
+     
+
       
      url(r'^$', 'guru.core.views.home', name='home'),
 

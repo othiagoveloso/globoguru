@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).parent
 SECRET_KEY = '*jkfy5vxrim-n@8hvsz=3@!r^kc79-#r#n2-vdod)+m(!u0@_m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 TEMPLATE_DEBUG = DEBUG
 
