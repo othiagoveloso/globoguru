@@ -195,6 +195,16 @@ section {
     
 }
 
+
+ul {
+
+ list-style-type: disc;
+ list-style-position: outside;
+ list-style-image: none;
+ color: #0C69DE;
+
+}
+
 .section {
 
     background-image: url("/static/img/blackboard2.png");
