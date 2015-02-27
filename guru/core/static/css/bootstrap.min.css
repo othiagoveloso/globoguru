@@ -1,7 +1,7 @@
 
 @import "//fonts.googleapis.com/css?family=Lato:400,700,400italic";
 html {
-    font-family: 'Exo',sans-serif;
+    font-family: "RooneySans-Medium","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
     background-color:; 
 
 }
@@ -303,7 +303,7 @@ hr {
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: black;
-    font-family: 'Exo',sans-serif; 
+    font-family: "RooneySans-Medium","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif; 
     font-style: normal; 
     font-weight: 500;
 }
@@ -1364,7 +1364,7 @@ width:415px;
 font-size: 18px;
 padding:5px;  
 color: #333333;
-font-family: 'Exo', sans-serif;
+font-family: "RooneySans-Medium","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
 padding-top: 5%;
 
 
@@ -1373,7 +1373,7 @@ padding-top: 5%;
 #menu h3 {
 
     color:#FF8D13 ;
-    font-family: 'Exo', sans-serif;
+    font-family: "RooneySans-Medium","Lucida Grande","Lucida Sans Unicode","Trebuchet MS",sans-serif;
     font-size: 36px; 
 }
 

@@ -69,8 +69,8 @@
       
     
                     
-                     
-                     <li> <a href="#"> Olá, {{ user }} </a> </li>
+                       
+                     <li>  <a href="#"> Olá, {{ user }} </a> </li>
 
                     
                     
@@ -190,8 +190,8 @@
                         {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
                    
 <br>
-
-                   <li><a href="{% url 'modulos' Training.slug   %} "> 
+                     
+                   <li> <img src="{{ STATIC_URL }}img/lista_treinamento.png"> <a href="{% url 'modulos' Training.slug   %} "> 
                   
 
                    {{ Training.name }} 
@@ -246,7 +246,7 @@
                         {% if Training.segment == "nv" %}
                         <br>
                    
-                   <li><a href="{% url 'novidades' Training.slug   %} "> 
+                   <li> <img src="{{ STATIC_URL }}img/lista2.png"> <a href="{% url 'novidades' Training.slug   %} "> 
                   
                    {{ Training.name }} 
                    
@@ -301,7 +301,7 @@
                         {% if Training.segment == "av" %}
                         <br>
                    
-                   <li><a href="{% url 'novidades' Training.slug   %} "> 
+                   <li><img src="{{ STATIC_URL }}img/lista2.png"><a href="{% url 'novidades' Training.slug   %} "> 
                     
 
                    {{ Training.name }} 
