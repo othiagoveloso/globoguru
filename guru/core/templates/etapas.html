@@ -17,16 +17,16 @@
 
         <div class="bread">
         <div class= "container"> 
-            <div class="col-lg-14">
+             <div class="col-lg-14">
                 <h5 class="page-header">
-             <ol class="breadcrumb">
-  <li> <a href="/treinamentos/publicacao-core">Treinamento: {{ title.modulos.trainings }}</a></li>
+            <ol class="breadcrumb">
+  <li> <a href="#">Treinamento: {{ title.modulos.trainings }}</a></li>
   <li class="active">{{ title.modulos.name }}</li>
-  <li class="active">Assistindo a etapa: {{step.name}}</li>
+  <li class="active"> {{step.name}}</li>
   <br> 
   
   <li class="active"> {{DateTime}}</li>
-</ol>
+</ol> 
 
                 </h5> 
 
@@ -48,6 +48,7 @@
 <div id="menu"> 
 <div id="your_col">
  <h3>  {{ title.modulos.position }} - {{ title.modulos.name }} </h3> 
+ <p> Clique nas etapas abaixo para ver os vídeos correspondentes </p>
 
   {% for steps in steps %} 
               
@@ -62,7 +63,7 @@
 
 
                 
-               <span class="flag">   {{ steps.name  }} »  </span>  
+               <span class="flag" aria-pressed="false" autocomplete="off" >   {{ steps.name  }} »  </span>  
 
                </div>
              </div> 
@@ -90,7 +91,7 @@
 </div> 
  
 <div class="section-right_step">    
-
+  
 
  
        
@@ -133,15 +134,23 @@
 
  <div align="center">
  
+{% if last  %}
 
 
-        
+
+   
+
+ {% else %}
+
+       <p> Assistiu todas as etapas desse módulo? vá para o próximo </p>
 
  <a class="btn2" href="{% url 'etapas'  proximo_modulo %}">  
 
           Próximo módulo »
 
   </a>       
+
+  {% endif %} 
 
 
      
@@ -154,7 +163,7 @@
   
   <div class="container"> 
     
-    {% if step.description == "" %}
+    {% if modulos.description == "" and modulos.description == "" %}
     
     {% else %}
     <h3 class="border"> Informações adicionais </h3> 

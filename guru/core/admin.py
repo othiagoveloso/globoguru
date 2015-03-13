@@ -1,4 +1,6 @@
 from django.contrib import admin
+
+
 #from django_admin_bootstrapped.admin.models import SortableInline
 from guru.core.models import Training, Modulo, Step
 
@@ -73,6 +75,11 @@ admin.site.register(Step, StepAdmin)
 
 class HomeAdmin(admin.ModelAdmin):
     list_display = ('spotlight_title')
+
+
+
+
+
 
 
 #admin.site.register(Home, HomeAdmin)

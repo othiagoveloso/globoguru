@@ -88,10 +88,13 @@ def training_name(request,slug,template_name='modulos.html'):
 def etapas(request,slug,template_name='etapas.html'):
     
     
+    
+   
     list_modulo = Modulo.objects.get(slug=slug)
     steps = Step.objects.filter(modulos_id=list_modulo)
     modulos = Modulo.objects.filter(trainings_id=list_modulo.trainings_id)
-
+    
+    
     
     
     proximo_modulo = ""
@@ -107,6 +110,8 @@ def etapas(request,slug,template_name='etapas.html'):
         if mod == list_modulo:
             proximo_modulo = modulos[count]
 
+            last = quantidade-1
+
         
                 
     
@@ -115,7 +120,7 @@ def etapas(request,slug,template_name='etapas.html'):
            
 
                 
-    return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'steps':steps, 'title':steps[0],'movie':list_modulo.video})
+    return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'steps':steps, 'title':steps[0],'movie':list_modulo.video,'last':last,'modulos':modulos})
 
 
 
@@ -137,6 +142,7 @@ def video(request,id, template_name='etapas.html'):
     
     count = 0
     quantidade = len(modulos)
+    
 
     for mod in modulos:
         if count < quantidade-1:
@@ -146,7 +152,7 @@ def video(request,id, template_name='etapas.html'):
             proximo_modulo = modulos[count]
 
     
-
+               
 
 
     steps = Step.objects.filter(modulos_id=list_modulo)

@@ -6,6 +6,8 @@ import settings
 from django.contrib import admin
 #from my.forms import AuthenticationForm
 admin.autodiscover()
+
+
 #admin.site.login_form = AuthenticationForm
 
 
@@ -47,10 +49,10 @@ urlpatterns = patterns('',
 
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
 
-     url(r'^admin/', include(admin.site.urls)),
+     url(r'^admin/', include(admin.site.urls, )),
 
 
-
+    
 
 
 
