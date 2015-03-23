@@ -692,6 +692,7 @@ width: 500px;
 
 body {
     counter-reset: subsection;
+    border-top: 40px solid #F2CA26;
 }
 
 

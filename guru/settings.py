@@ -52,6 +52,8 @@ INSTALLED_APPS = (
     'guru.home',
     'guru.subscriptions', 
     'embed_video', 
+    'dajaxice',
+    'dajax',
 
 )
 

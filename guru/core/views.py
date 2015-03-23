@@ -69,6 +69,15 @@ def modulos(request,slug,template_name='modulos.html'):
     modulos = Modulo.objects.filter(trainings_id=list_training.id)
     return render(request, template_name, { 'modulos':modulos, 'title':modulos[0],'titles':modulos } )
 
+def voltar(request,slug,template_name='modulos.html'):
+    
+    steps = Step.objects.get(id=id)
+    modulos = Modulo.objects.filter(trainings_id=steps.modulos_id)
+    list_training = Training.objects.get(slug=slug)
+    trainings = Training.objects.filter(modulos=list_training)
+    
+    
+    return render(request, template_name, { 'trainings':trainings.slug, 'title':modulos[0],'titles':modulos } )
 
 
 

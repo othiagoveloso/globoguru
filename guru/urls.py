@@ -29,6 +29,8 @@ urlpatterns = patterns('',
      
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.modulos', name='modulos'),
 
+     url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar', name='voltar'),
+
      url(r'^treinamentos/(?P<slug>[\w-]+)', 'guru.core.views.voltar_modulo', name='voltar_modulo'),
      
      url(r'^modulos/(?P<slug>[\w-]+)','guru.core.views.etapas', name='etapas'),
