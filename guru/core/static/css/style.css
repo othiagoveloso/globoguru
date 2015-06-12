@@ -11,7 +11,7 @@
 
 #quadro {
 
-  background-image: url("/static/img/blackboard2.png");
+  background-image: url("/static/img/alg-classroom-jpg.jpg");
   background-size: 100%;
 
 
@@ -31,6 +31,7 @@
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	opacity:0.9;
 }
 	.login-form .panel a {
 		color: #00aeef;

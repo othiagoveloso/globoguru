@@ -19,6 +19,7 @@ body {
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
+    text-align: right;
 }
 audio, canvas, progress, video {
     display: inline-block;
@@ -227,11 +228,11 @@ input, button, select, textarea {
     line-height: inherit;
 }
 a {
-    color: #016FDE;
+    color: white;
     text-decoration: none;
 }
 a:hover, a:focus {
-    color: #016FDE;
+    color: white;
     text-decoration: none;
 }
 a:focus {
@@ -366,6 +367,7 @@ h6, .h6 {
 }
 p {
     margin: 0 0 10.5px;
+    font-size: 15px; 
 }
 .lead {
     font-size: 17px;
@@ -1033,7 +1035,8 @@ pre code {
 }
 .col-md-4 {
     width: 33.3333%;
-    text-align: center;
+    text-align: left;
+    margin-left:9%;
 }
 
 .col-md-4 hr {
@@ -3271,6 +3274,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 @media (min-width: 768px) {
 .navbar-header {
     float: left;
+    color:white;
 }
 }
 .navbar-collapse {
@@ -3620,7 +3624,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     color: #18BC9C;
 }
 .navbar-inverse {
-    background-color: #2165C1;
+    background-color: #4576a1;
     border-color: rgba(0, 0, 0, 0);
 }
 .navbar-inverse .navbar-brand {
@@ -3912,9 +3916,9 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
     margin-left: 3px;
 }
 .jumbotron {
-    background-color: #ECF0F1;
+    background-color: ;
     color: inherit;
-    margin-bottom: 30px;
+    margin-bottom: -30px;
     padding: 30px;
 }
 .jumbotron h1, .jumbotron .h1 {
@@ -3934,7 +3938,7 @@ a.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
 @media screen and (min-width: 768px) {
 .jumbotron {
     padding-bottom: 48px;
-    padding-top: 48px;
+    padding-top: 78px;
 }
 .container .jumbotron {
     padding-left: 60px;
@@ -4159,8 +4163,8 @@ a.list-group-item:hover, a.list-group-item:focus {
     text-decoration: none;
 }
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
-    background-color: #2C3E50;
-    border-color: #2C3E50;
+    background-color: #F39C12;
+    border-color: #F39C12;
     color: #FFFFFF;
     z-index: 2;
 }

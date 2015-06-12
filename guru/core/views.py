@@ -147,7 +147,16 @@ def video(request,id, template_name='etapas.html'):
     list_modulo = Modulo.objects.get(id=step.modulos_id)
     
     modulos = Modulo.objects.filter(trainings_id=list_modulo.trainings_id)
+    ##buffer_modulo = false
+
+    ##try:
+        ##buffer_modulo = Modulo.objects.filter(trainings_id=list_modulo.trainings_id+1)
+    ##except Exception, e:
+       ## raise   
+    
+
     proximo_modulo = ""
+    modulo_anterior = ""
     
     count = 0
     quantidade = len(modulos)
@@ -158,7 +167,16 @@ def video(request,id, template_name='etapas.html'):
             count = count+1
 
         if mod == list_modulo:
-            proximo_modulo = modulos[count]
+         
+                proximo_modulo = modulos[count]
+
+        else: 
+         
+            modulo_anterior = modulos[count]
+            
+
+        
+
 
     
                
@@ -167,7 +185,7 @@ def video(request,id, template_name='etapas.html'):
     steps = Step.objects.filter(modulos_id=list_modulo)
 
     
-    return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'movie':step.video, 'steps':steps, 'title':steps[0], 'step':step })    
+    return render(request, template_name,{'quantidade':quantidade, 'proximo_modulo':proximo_modulo.slug, 'movie':step.video, 'steps':steps, 'title':steps[0], 'step':step, 'modulo_anterior':modulo_anterior.slug })    
     
 
 @login_required
