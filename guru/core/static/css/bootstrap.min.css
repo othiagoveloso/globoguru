@@ -3875,6 +3875,12 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .label-danger {
     background-color: #E74C3C;
 }
+
+.label-danger:hover {
+
+background-color: #f32611;
+
+}
 .label-danger[href]:hover, .label-danger[href]:focus {
     background-color: #D62C1A;
 }
@@ -4167,7 +4173,29 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
     border-color: #F39C12;
     color: #FFFFFF;
     z-index: 2;
+
 }
+
+a.list-group-item.active:hover {
+
+background-color: #d08000;
+    border-color: #d08000;
+    color: #FFFFFF; 
+    z-index: 2;
+
+}
+
+a.list-group-item.active2, a.list-group-item.active2:hover, a.list-group-item.active2:focus {
+    background-color: #E74C3C;
+    border-color: #E74C3C;
+    color: #FFFFFF;
+    z-index: 2;
+
+}
+
+
+
+
 a.list-group-item.active .list-group-item-heading, a.list-group-item.active:hover .list-group-item-heading, a.list-group-item.active:focus .list-group-item-heading {
     color: inherit;
 }
@@ -5232,3 +5260,9 @@ table-bordered > thead > tr > th, .table-bordered > thead > tr > th, table-borde
     box-shadow: none;
 }
 
+#adicionais {
+
+ height: 300px; 
+ width: 700px;
+
+}

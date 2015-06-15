@@ -58,7 +58,7 @@
 
                <div class="list-group">
 <a class="list-group-item active"  href="{% url 'video' steps.id  %}">
-<h4 class="list-group-item-heading" aria-pressed="false" autocomplete="off"  >{{ steps.name  }}</h4>
+<h4 class="list-group-item-heading" aria-pressed="false" autocomplete="off" data-placement="left" title="Tooltip on left" Tooltip on left >{{ steps.name  }}</h4>
 <p class="list-group-item-text"></p>
 
 
@@ -75,8 +75,8 @@
 <h4 class="list-group-item-heading" aria-pressed="false" autocomplete="off"  >Treinamento finalizado</h4>
 
  {% else %}
-  <a class="list-group-item active"  href="{% url 'etapas'  proximo_modulo %}">
-<h4 class="list-group-item-heading" aria-pressed="false" autocomplete="off"  >{{ proximo_modulo.title }}</h4>
+  <a class="list-group-item active2"  href="{% url 'etapas'  proximo_modulo %}">
+<h4 class="list-group-item-heading" color="white" aria-pressed="false" autocomplete="off"  >Próximo módulo »</h4>
 <p class="list-group-item-text"></p>
 
 </a> 
@@ -121,10 +121,14 @@
 
   </iframe> 
 
+ <div id="adicionais">  <h4> {{ step.description }} </h4> </div>
+
 
 
 
 {% endvideo %}
+
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -166,16 +170,7 @@
   
   <div class="container"> 
     
-    {% if modulos.description == "" and modulos.description == "" %}
     
-    {% else %}
-    <h3 class="border"> Informações adicionais </h3> 
-    <h4> {{ step.description }} </h4>
-    {% endif %}
-
-<button class="btn" data-toggle="modal" data-target="#myModal">
-  Dúvidas?
-</button>
  
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">  
