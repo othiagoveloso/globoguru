@@ -80,8 +80,7 @@
     
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      </a> portal <strong> beta </strong> de vídeo aulas da <strong> globo.com
-        <h2 > <span class="label label-primary">Veja <strong> as categorias: </strong>  </span> </h2>
+      
 
 
         
@@ -100,7 +99,7 @@
           {% for Training in training %}
                         {% if Training.status == "p" and Training.segment == "p" or Training.segment == "pr" %}
 
-          <p><a class="btn btn-default" href=" {% url 'modulos' Training.slug   %}" role="button"> <i class="glyphicon glyphicon-play"></i> {{ Training.name }}  &raquo;</a></p>
+          <p><a class="btn btn-default" href=" {% url 'modulos' Training.slug   %}" role="button"> <i class=""></i> {{ Training.name }}  &raquo;</a></p>
 
           {% endif %}
                     {% endfor %}
@@ -113,7 +112,7 @@
            {% for Training in training %}
                         {% if Training.segment == "nv" and Training.status == "p" %}
           
-          <p><a class="btn btn-default" href="{% url 'novidades' Training.slug   %}" role="button"> <i class="glyphicon glyphicon-tag"></i> {{ Training.name }} &raquo;</a></p>
+          <p><a class="btn btn-default" href="{% url 'novidades' Training.slug   %}" role="button"> <i class=""></i> {{ Training.name }} &raquo;</a></p>
 
           {% endif %}
                     {% endfor %}
@@ -124,13 +123,15 @@
            {% for Training in training %}
                         {% if Training.segment == "av" and  Training.status == "p" %}
 
-          <p><a class="btn btn-default" href="{% url 'ondemand' Training.slug   %}" role="button"> <i class="glyphicon glyphicon-record"></i>   {{ Training.name }}  &raquo;</a></p>
+          <p><a class="btn btn-default" href="{% url 'ondemand' Training.slug   %}" role="button"> <i class=""></i>   {{ Training.name }}  &raquo;</a></p>
 
 
            {% endif %}
                     {% endfor %}
         </div>
       </div>
+    </div> 
+  </div>
 
       <p>
 
