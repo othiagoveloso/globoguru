@@ -2,7 +2,8 @@
 Projeto beta de APP de vídeo aulas.
 Feito com Python/Django e Bootstrap, o objetivo do portal é ensinar a novos funcionários através de vídeos, como usar as plataformas internas da globo.com.
 
-Utilizo o Admin do Django como editor de conteúdo e o User_admin nativo, para fazer o permissionamento via login.
+Utilizo o Admin do Django como editor de conteúdo e o User_admin nativo, para fazer o permissionamento via login, além do HEROKU, para hospedagem de teste, nível cliente.
+
 
 
 Abaixo, alguns prints de como funciona a APP. Logo após os prints, ensino como fazer o embed de vídeos.
@@ -61,7 +62,13 @@ Enfim, em seu HTML, antes da tag *iframe*, faça o load da seguinte forma:
 
 
 
+Para saber mais sobre: 
 
+Django: https://www.djangoproject.com/
+
+Bootstrap: http://getbootstrap.com/
+
+Heroku: https://heroku.com 
 
 
 
