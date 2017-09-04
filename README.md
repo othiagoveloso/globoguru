@@ -28,6 +28,40 @@ Abaixo, alguns prints de como funciona a APP:
 
 
 
+Como fazer o embed dos vídeos?
+
+Instale no seu projeto *django-embed-video*
+
+Em seus models.py,faça o seguinte import:
+
+```from embed_video.fields import EmbedVideoField```
+
+Em sua class, declare o tipo da seguinte maneira:
+
+```video = EmbedVideoField```
+
+Em seu Settings.py declare:
+
+```
+EMBED_VIDEO_BACKENDS = (
+    'embed_video.backends.YoutubeBackend',
+    'embed_video.backends.VimeoBackend',
+    'embed_video.backends.SoundCloudBackend',
+    'core.backends.CustomBackend',
+)
+
+```
+
+
+Enfim, em seu HTML, antes da tag *iframe*, faça o load da seguinte forma:
+
+```
+{% load embed_video_tags %}
+```
+
+
+
+
 
 
 
