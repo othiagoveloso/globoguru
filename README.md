@@ -5,7 +5,7 @@ Feito com Python/Django e Bootstrap, o objetivo do portal é ensinar a novos fun
 Utilizo o Admin do Django como editor de conteúdo e o User_admin nativo, para fazer o permissionamento via login.
 
 
-Abaixo, alguns prints de como funciona a APP:
+Abaixo, alguns prints de como funciona a APP. Logo após os prints, ensino como fazer o embed de vídeos.
 
 
 
