@@ -10,6 +10,6 @@ gdata==2.0.18
 psycopg2==2.5.1
 importlib==1.0.3
 pystache==0.5.4
-requests==2.3.0
+requests==2.20.0
 static==1.0.2
 wsgiref==0.1.2
